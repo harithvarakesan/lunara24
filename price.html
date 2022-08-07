@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="favicons/6864-img-favicon.png" type="image/png">
+    <title>ICAISC | BIT</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/css-bootstrap.css">
+    <link rel="stylesheet" href="css/linericon-style.css">
+    <link rel="stylesheet" href="css/css-font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl-carousel-owl.carousel.min.css">
+    <link rel="stylesheet" href="css/lightbox-simpleLightbox.css">
+    <link rel="stylesheet" href="css/css-nice-select.css">
+    <link rel="stylesheet" href="css/animate-css-animate.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/css-style.css">
+    <link rel="stylesheet" href="css/css-responsive.css">
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* CSS */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+        /*Rainbow*/
+        @keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.rainbow {
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+}
+.rainbow::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #399953;
+  background-repeat: no-repeat;
+  background-size: 50% 50%, 50% 50%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+  animation: rotate 4s linear infinite;
+}
+.rainbow::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: white;
+  border-radius: 5px;
+}
+/*Rainbow Styling Ends*/
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="index.html"><span>ICAISC</span></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="speakers.html">Session chair</a>
+                            </li><li class="nav-item submenu dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Event Details</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="price.html">Registration</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Downloads</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="./files/PaperTemplate%20(2).pdf" download="Paper Template" target="_blank">Paper Template</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="Copyright_Form.html" download="Copyright form" target="_blank">Copyright form</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item"><a href="price.html" class="tickets_btn">Register Now</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+            <div class="container">
+                <div class="banner_content text-center">
+                    <div class="page_link">
+                        <a href="index.html">Home</a>
+                        <a href="price.html">Registration</a>
+                    </div>
+                    <h2>Get Registered</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!-- Marquee area -->
+
+    <div class="container">
+        <marquee behavior="" direction="left" scrollamount="5" class="register">
+            <div class="hero_txt d-flex align-items-center">
+                Click here for regiteration 👉 &nbsp;&nbsp;   <a href="https://forms.gle/kRfwVwE3ZBTVhobs5" target="_blank" ><button class="button-30" role="button">Click Here</button></a>
+            </div>
+        </marquee>
+    </div>
+
+    
+
+    <!--================Price Area =================-->
+    <section class="price_area">
+        <div class="container">
+            <div class="main_title p_50 box-shad rad-10 rainbow">
+                <h2 class="p10">PROCEDURE FOR PAPER SUBMISSION</h2>
+                <div class="col-lg-7 m-auto text-justify">
+                    <ul class="font-18">
+                        <li class="p10">Submit your paper via Email - ICAISC23@GMAIL.COM</li>
+                        <li class="p10">Registration form and other details will be sent only if paper is accepted</li>
+                        <li class="p10">
+                            <h4>Paper is to be prepared using the following guidelines</h4>
+                        </li>
+                        <li class="p10">Paper Format:Standard, Single column format limited to 8 pages only</li>
+                        <li class="p10">Paper Size:A4</li>
+                        <li class="p10">Font: Times New Roman (All contents of the entire paper is to be typed using
+                            Times New Roman Font)</li>
+                        <li class="p10">Paper Title:Centre and bold with font size 14 points</li>
+                        <li class="p10">Paper Contents: font size 12 points with sub-title bold</li>
+                        <li class="p10">Authors Name(s), Affiliation(s): Center with font size 12 points</li>
+                        <li class="p10">Table Captions should be placed above the table with font size 12 points</li>
+                        <li class="p10">Figure Captions should be placed below the figure with font size 12 points</li>
+                        <li class="p10">Reference should be numbered starting from 1 with font size 10 points</li>
+                        <li class="p10">All subtitles and contents should be left aligned and justified</li>
+                        <li class="p10">Avoid using text boxes and make all the tables and figures in line with text
+                        </li>
+                        <li class="p10">Set Line Spacing to Single and Set paragraph spacing to 0 (for all contents and
+                            subtitles)</li>
+                        <li class="p10">Manuscripts should be a minimum of 5 (five) single-sided pages (suggested
+                            maximum of 10 pages)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="price_inner row main_title">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="price_item">
+                        <div class="price_text">
+                            <h3>Student</h3>
+                            <h5>Research Scholars &amp; Students</h5>
+                            <h2>&#8377;500</h2>
+                            <ul class="list">
+                                <li>Per paper</li>
+                                <li>We wish you the best of luck</li>
+                            </ul>
+                        </div>
+                        <!-- <a class="price_btn" href="#">Get Registered</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="price_item">
+                        <div class="price_text">
+                            <h3>Faculty</h3>
+                            <h5>Faculty members</h5>
+                            <h2>&#8377;750</h2>
+                            <ul class="list">
+                                <li>Per paper</li>
+                                <li>We wish you the best of luck</li>
+                            </ul>
+                        </div>
+                        <!-- <a class="price_btn" href="#">Get Registered</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="price_item">
+                        <div class="price_text">
+                            <h3>Industry Person</h3>
+                            <h5>Industry participants</h5>
+                            <h2>&#8377;1000</h2>
+                            <ul class="list">
+                                <li>Per paper</li>
+                                <li>We wish you the best of luck</li>
+                            </ul>
+                        </div>
+                        <!-- <a class="price_btn" href="#">Get Registered</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="main_title p_50 box-shad rad-10 rainbow">
+                <h2>Important</h2>
+                <div class="col-lg-8 m-auto">
+                    <h4 class="hero p10">
+                        The accepted papers will be published in SCOPUS/WoS/UGC recognized reputed journals with
+                        additional charge based on the willingness of the author.
+                    </h4>
+                    <h4 class="hero p10">
+                        Payment procedure for Registration will be intimated through the registered mail id.
+                    </h4>
+                </div>
+                <!-- <div class="col-lg-9 m-auto">
+                    <strong>For payment use Gpay</strong><br>
+                    <img src="img/gpay.png" class="img-fluid r-50" alt="" height="100px" width="100px">
+                    <p class="hero_txt font-18">9942984621</p>
+                </div> -->
+            </div>
+        </div>
+    </section><p style="text-align: center; font-size: 250%;">👇</p>
+    <!--================End Price Area =================-->
+    <div>
+        <div>
+           <center> <a href="https://forms.gle/kRfwVwE3ZBTVhobs5" target="_blank" ><button class="button-30" role="button">Register</button></a></center> 
+        </div><br><br>
+    </div>
+
+    <!--================ start footer Area  =================-->
+    <footer class="footer-area p_120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3  col-md-6 col-sm-6">
+                    <div class="single-footer-widget tp_widgets">
+                        <h6 class="footer_title">Quick Links</h6>
+                        <ul class="list quick-link">
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="speakers.html">Session Chair</a></li>
+                            <li><a href="schedule.html">Schedule</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-6">
+                    <div class="single-footer-widget news_widgets">
+                        <h6 class="footer_title">About</h6>
+                        <p>
+                            ICAISC 2023 brings together international researchers, academicians and practitioners
+                            to exchange views, share ideas and explore future research themes in order to meet
+                            current challenges and promote positive social change in relation to the use of AI and
+                            smart computing.
+                            <section>
+                                <br><br><br><br>
+                                <ul style="white-space: nowrap;">
+                                <a href="https://gd03champ.github.io">
+                                    <i style="font-size: 150%; color: white;" class="fa">&#xf121;</i>
+                                    <i style="color: white; font-family: 'Share Tech Mono', monospace; font-size: 150%;">by GD</i>
+                                </a></ul></section>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="single-footer-widget instafeed">
+                        <h6 class="footer_title">For queries and support contact</h6>
+<ul class="list instafeed">
+
+        <li>
+            <h3>Mr Organising Secretary</h3>
+        </li>
+        <li>Organizing Secretary</li>
+        <li>Department of CSE</li>
+        <li>Bannari Amman Institute of Technology</li><li>Sathyamangalam</li>
+        <li>Mobile: +91 9876543210, 9876543210</li>
+        <li>Phone: 04276 12345</li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                <p class="col-lg-8 col-md-8 footer-text m-0">
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+
+                    </script>
+                    All rights reserved | <a href="www.bitsathy.ac.html" target="_blank">BIT</a>
+                </p>
+                <div class="col-lg-4 col-md-4 footer-social">
+                    <a href="https://www.facebook.com/bitsathyindia/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/bitsathyindia?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UC8PSUPCNNV2JOY1gG2uvOEQ" target="_blank"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/lifeatbit/" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--================ End footer Area  =================-->
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/7763-js-jquery-3.2.1.min.js"></script>
+    <script src="js/6512-js-bootstrap.min.js"></script>
+    <script src="js/557-js-stellar.js"></script>
+    <script src="js/lightbox-simpleLightbox.min.js"></script>
+    <script src="js/js-jquery.nice-select.min.js"></script>
+    <script src="js/isotope-imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope-isotope-min.js"></script>
+    <script src="js/owl-carousel-owl.carousel.min.js"></script>
+    <script src="js/counter-up-jquery.waypoints.min.js"></script>
+    <script src="js/counter-up-jquery.counterup.js"></script>
+    <script src="js/9519-js-theme.js"></script>
+</body>
+
+</html>

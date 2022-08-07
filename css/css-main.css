@@ -1,0 +1,7 @@
+.schedule-frame{
+    overflow: scroll;
+    padding: 10px 10px;
+    resize: both;
+    width: 100%;
+    height: 70vh;
+}
