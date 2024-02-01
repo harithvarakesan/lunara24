@@ -694,8 +694,9 @@ button:focus {
 }
 
 .banner_area .banner_inner .overlay {
-  background: url(../images/banner-home-banner.gif) no-repeat scroll center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.063), black), url(../images/images/Lost-in-Mind-2.webp) no-repeat scroll center center;
   position: absolute;
+  background-size: cover;
   left: 0;
   right: 0;
   top: 0;
