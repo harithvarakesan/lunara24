@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>project presentation</title>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<body>
+		<div class="open">
+			<div class="layer"></div>
+			
+		</div>
+		<section id="blur">
+			
+			<div class="bannerText">
+				<h2>IMPELLZ'23</h2><br>
+				<h3>Project presentation</h3>
+				<p>The  event is about enhancing a particular student’s ability in the art of academic writing or making papers related to a technical field. The event consists of a single round with two jury members, 7 mins of explanation and 3 mins of Q/A session. PPT must be in the given template.Plagiarism report has to be prepared and it will be collected via Google form.</p>
+				<a href="#" onclick="toggle()">Know more</a>
+			</div>
+			<div id="popup">
+        		<h2>Paper Presentation</h2>
+        		<strong>Rules:</strong>
+        		<ul>
+        			<li><p>Team size: 3 - 4</p></li>
+        			<li><p>PPT slides: 7 - 10 slides (follow given template)</p></li>
+        			<li><p>Format: IEEE format is mandatory (7pages) & ppt</p></li>
+        			<li><p>Plagiarism: Less than 30%</p></li>
+        		</ul>
+        		<strong><b>Event Date: 04.03.2023</b></strong>
+
+        		<br>
+        		<strong>Topics:</strong>
+        		<ul>
+        			<li><p>Machine Learning</p></li>
+        			<li><p>Cloud Technology</p></li>
+        			<li><p>BlockChain Technology</p></li>
+        			<li><p>Cyber Security</p></li>
+        			<li><p>Big Data Analytics</p></li>
+        			<li><p>NLP Concepts with Artificial Intelligence</p></li>
+        			<li><p>Wireless Network Communication (WNC)</p></li>
+        		</ul>
+        		
+        		<a href="#" onclick="toggle()">Close</a>
+
+
+    		</div>
+    		<br>
+
+			<div class="element1"></div>
+			<div class="element2"></div>
+		</section>
+		<script>
+			function toggle(){
+            	var blur = document.getElementById('blur');
+            	blur.classList.toggle('active');
+            	var blur = document.getElementById('blur');
+            	popup.classList.toggle('active');
+            }
+
+    </script>
+    <style>
+    section #blur.active{
+    filter: blur(30px);
+    pointer-events: none;
+    user-select: none;
+    }
+    #popup a{
+        position: relative;
+        padding: 5px 20px;
+        display: inline-block;
+        
+        text-decoration: none;
+        color: #fff;
+        background: #111;
+
+    }
+    #popup{
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 600px;
+        padding: 50px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+        background: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    #popup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+
+    }
+    </style>
+	</body>
+</html>

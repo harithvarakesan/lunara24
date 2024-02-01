@@ -259,7 +259,7 @@ button:focus {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 90vw;
   }
 }
 
@@ -350,11 +350,16 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item .nav-link:hover {
-  color: rgb(4, 164, 238);
+  background-color: rgba(203, 4, 238, 0.379);
+  border: 2px solid white;
+  border-radius: 10px;
+  transform: scale(1.1);
 }
 
 .header_area .navbar .nav .nav-item.active .nav-link {
-  color: rgb(4, 164, 238);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 .header_area .navbar .nav .nav-item .nav-link:after {
@@ -440,6 +445,8 @@ button:focus {
 .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
   background: #6247ea;
   color: #fff;
+  transform: scale(1);
+  transition-duration: 0.3s;
 }
 
 @media (min-width: 992px) {
@@ -546,7 +553,7 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url(../images/banner-home-banner.gif) no-repeat scroll center center;
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/images/Lost-in-Mind-2.webp) no-repeat scroll center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -582,6 +589,25 @@ button:focus {
   margin-bottom: 15px;
 }
 
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Text color */
+  text-align: center;
+}
+
+.text-overlay h1 {
+  font-size: 60px; /* Adjust font size as needed */
+  font-weight: bold;
+  margin: 0;
+  padding: 20px; /* Adjust padding as needed */
+}
 .home_banner_area .banner_inner .banner_content p {
   color: #f9f9ff;
   font-family: "Roboto", sans-serif;

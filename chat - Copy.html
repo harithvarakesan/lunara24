@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBot</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="dis_style.css" />
+  </head>
+  <body>
+    <div class="open">
+      <div class="layer"></div>
+      
+    </div>
+     <section id="blur">      
+      <div class="card">
+        <div class="poster">
+        <img src="hostel.jpg"></img>
+        <div class="details">
+
+        <h1>FOOD & ACCOMODATION</h1>
+        <br>
+        <ul >
+            <li><p>Food and accommodation will be provided to participants.</p></li>
+            <li><p>Accommodation will be free of charge.</p></li>
+            <li><p>Food will be on a charged basis.</p></li>
+            <li><p>Lunch during 4th March is included in the Registration Fees for External participants.</p></li>
+            <li><p>Kindly fill the accommodation request form.</p></li>
+            <li>  </li>
+        </ul>
+        <div><center><a href="https://docs.google.com/forms/d/e/1FAIpQLSd7-c6MVoBPa-qF4S83fqg5of9efJLFcYoBLtVSS3CX6cPw4Q/viewform" style="color: #ffffff; padding: 20px 20px; background:linear-gradient(45deg,#141da2,#9b5cf6);border-radius: 15px;">Accomodation Registration</a></center></div>
+    </div>
+
+        
+      
+
+
+        </div>
+      <div class="element1"></div>
+      <div class="element2"></div>
+      
+      
+    </section>
+
+    <header style="position: absolute;
+    top: 0;">
+      <nav>
+        <a href="#home" id="logo"><img src="headlogo.png" style="width:150px;"></a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="index.html" >Home</a>
+          </li>
+          <li>
+            <a href="TECHNICAL.html" >Technical</a>
+          </li>
+          <li>
+            <a href="NON-TECHNICAL.html" >Non-Technical</a>
+          </li>
+          <li>
+            <a href="ack.html">Accommodation</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="price.html" style="background:linear-gradient(45deg,#141da2,#9b5cf6);padding: 10px 10px;">Register</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div id="popup">
+            <h2>Paper Presentation</h2>
+            <strong>Rules:</strong>
+        <ul>
+              <li><p>Team size: 1 - 4</p></li>
+              <li><p>PPT slides: 7 - 10 slides </p></li>
+              <li><p>Format: IEEE format is mandatory (follow given template)</p></li>
+          <li><p>Duration: 5 mins - Presentation</p></li>
+          <li><p>Duration: 2 mins - Q/A session</p></li>
+            </ul>
+            
+
+            <br>
+            <strong>Topics:</strong>
+            <ul>
+              <li><p>Machine Learning</p></li>
+              <li><p>Cloud Technology</p></li>
+              <li><p>BlockChain Technology</p></li>
+              <li><p>Cyber Security</p></li>
+              <li><p>Big Data Analytics</p></li>
+              <li><p>NLP Concepts with Artificial Intelligence</p></li>
+              <li><p>Wireless Network Communication (WNC)</p></li>
+          <li><p>Others</p></li>
+            </ul>
+            
+            <a href="format.pdf">Reference</a>
+            <a href="#" onclick="toggle()">Close</a>
+
+
+        </div><br>
+    <script>
+      function toggle(){
+              var blur = document.getElementById('blur');
+              blur.classList.toggle('active');
+              var blur = document.getElementById('blur');
+              popup.classList.toggle('active');
+            }
+
+    </script>
+
+    <script src="dis_script.js"></script>
+  </body>
+  <style>
+.card
+{
+position: relative;
+width: 920px;
+height: 480px;
+display: block;
+background: #fff;
+border-radius: 20px;
+box-shadow: 0 15px, 35px rgba(0,0,0,0,0.25);
+}
+.card .poster
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(hostel.png);
+}
+.card .poster::before
+{
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #ffffff 50%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+.card:hover .poster::before
+{
+    bottom: 0px;
+}
+.card .poster img
+{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.card:hover .poster img
+{
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+.card .details
+{
+    position: absolute;
+    bottom: -175px;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+.card:hover .details{
+    bottom: 0px;
+}
+.card .details .logo
+{
+    max-width:180px ;
+}
+.card .details h3
+{
+    font-size: 0.8em;
+    color: #fff;
+}
+.card .details .rating
+{
+    position: relative;
+    padding: 5px 0;
+}
+.card .details .rating .fa-star
+{
+    color: #f7f406;
+    font-size: 1em;
+}
+.card .details .rating span
+{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+
+.card .details .tags span
+{
+    padding: 2px 5px;
+    color: #fff;
+    background: #03a8f5;
+    border-radius: 4px;
+}
+.card .details .tags span:nth-child(2)
+{
+    background: #ff5722;  
+}
+.card .details .info
+{
+color: #fff;
+margin-top: 20px;
+}
+.card .details .cast
+{
+    position: relative;
+}
+.card .details .cast h4
+{
+  color: #fff;
+  margin-top: 10px;  
+}
+.card .details .cast ul
+{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.card .details .cast ul li
+{
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.card .details .cast ul li img
+{
+    max-width: 100%;
+}
+  </style>
+</html>

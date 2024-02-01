@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Non_Technical</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="dis_style.css" />
+  </head>
+  <body>
+    <div class="open">
+      <div class="layer"></div>
+      
+    </div>
+    <section class="services">
+	
+		<div class="content">
+			<div class="servicesBx">
+				<center><a href="webcam.html"><img src="images/WEBCAME.png"></a></center>
+				<h2>WEBCAM</h2>
+				
+				<br>
+				
+			</div>
+			<div class="servicesBx">
+				<center><a href="art.html"><img src="images/art.png"></a></center>
+				<h2>ART THE PERSON</h2>
+			
+				<br>
+				
+			</div>
+			<div class="servicesBx">
+				<center><a href="pic.html"><img src="images/pic.png"></a></center>
+				<h2>PIC ASSISTANT</h2>
+				
+				<br>
+				
+			</div>
+			<div class="servicesBx">
+				<center><a href="quiz.html"><img src="images/TEST.png"></a></center>
+				<h2>QUIZZ BEE </h2>
+				
+				<br>
+				
+			</div>
+		</div>
+
+	</section>
+
+    <header style="position: absolute;
+    top: 0;">
+      <nav>
+        <a href="#home" id="logo"><img src="headlogo.png" style="width:150px;"></a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="index.html" >Home</a>
+          </li>
+          <li>
+            <a href="TECHNICAL.html" >Technical</a>
+          </li>
+          <li>
+            <a href="NON-TECHNICAL.html" >Non-Technical</a>
+          </li>
+          <li>
+            <a href="ack.html">Accommodation</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="price.html" style="background:linear-gradient(45deg,#141da2,#9b5cf6);padding: 10px 10px;">Register</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div id="popup">
+            <h2>Paper Presentation</h2>
+            <strong>Rules:</strong>
+        <ul>
+              <li><p>Team size: 1 - 4</p></li>
+              <li><p>PPT slides: 7 - 10 slides </p></li>
+              <li><p>Format: IEEE format is mandatory (follow given template)</p></li>
+          <li><p>Duration: 5 mins - Presentation</p></li>
+          <li><p>Duration: 2 mins - Q/A session</p></li>
+            </ul>
+            
+
+            <br>
+            <strong>Topics:</strong>
+            <ul>
+              <li><p>Machine Learning</p></li>
+              <li><p>Cloud Technology</p></li>
+              <li><p>BlockChain Technology</p></li>
+              <li><p>Cyber Security</p></li>
+              <li><p>Big Data Analytics</p></li>
+              <li><p>NLP Concepts with Artificial Intelligence</p></li>
+              <li><p>Wireless Network Communication (WNC)</p></li>
+          <li><p>Others</p></li>
+            </ul>
+            
+            <a href="format.pdf">Reference</a>
+            <a href="#" onclick="toggle()">Close</a>
+
+
+        </div><br>
+    <script>
+      function toggle(){
+              var blur = document.getElementById('blur');
+              blur.classList.toggle('active');
+              var blur = document.getElementById('blur');
+              popup.classList.toggle('active');
+            }
+
+    </script>
+
+    <script src="dis_script.js"></script>
+  </body>
+  <style>
+    body
+    {
+      background:url(banner-home-banner.gif);;
+    }
+    .services
+  {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+  }
+  img
+  {
+    width: 100%;
+  }
+  .services .content
+  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+    margin-top: 150px;
+  }
+  .services .content .servicesBx
+  { 
+    padding: 40px 20px;
+    background: #fff;
+    color: #000;
+
+    max-width: 340px;
+    margin: 20px;
+    border-radius: 50px ;
+    text-align: center;
+    transition: 0.5s;
+    border: 0.1px solid #E1E0E0;
+  }
+  .services .content .servicesBx a
+  { 
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+  }
+  .services .content .servicesBx P
+  {
+    text-align: justify;
+  }
+  .services .content .servicesBx:hover
+  {
+    transform: translateY(-20px);
+    box-shadow: 10px 10px 30px 2px #000;
+  }
+  .heading
+  {
+    color: #fff;
+
+  }
+  .open
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 10000;
+}
+.open .layer
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: top;
+  animation: open 1s ease-in-out forwards;
+}
+.open .layer:nth-child(1)
+{
+  background: #000;
+  z-index: 2;
+}
+.open .layer:nth-child(2)
+{
+  background: #03a9f4;
+  animation-delay: 1s;
+  z-index: 1;
+}
+@keyframes open
+{
+  0%
+  {
+    transform: scaleY(1);
+  }
+  100%
+  {
+    transform: scaleY(0);
+  }
+}
+.header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.header .logo
+{
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  animation: fadeIn 0.5s linear forwards;
+  animation-delay: 5s;
+}
+.header ul
+{
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  display: flex;
+}
+.header ul li
+{
+  opacity: 0;
+  list-style: none;
+  margin: 0 10px;
+  animation: fadeInRight 0.5s linear forwards;
+}
+.header ul li:last-child
+{
+  margin-right: 0;
+}
+.header ul li a
+{
+  text-decoration: none;
+  font-size: 10px;
+  color: #000;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+}
+.header ul li a.active,
+.header ul li a:hover
+{
+  background: #000;
+  color: #fff;
+}
+@keyframes fadeInRight
+{
+  0%
+  {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100%
+  {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.header .logo
+{
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  animation: fadeIn 0.5s linear forwards;
+  animation-delay: 5s;
+}
+.header ul
+{
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  display: flex;
+}
+.header ul li
+{
+  opacity: 0;
+  list-style: none;
+  margin: 0 10px;
+  animation: fadeInRight 0.5s linear forwards;
+}
+.header ul li:last-child
+{
+  margin-right: 0;
+}
+.header ul li a
+{
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+}
+.header ul li a.active,
+.header ul li a:hover
+{
+  background: #fff;
+  color: #000;
+}
+@keyframes fadeInRight
+{
+  0%
+  {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  100%
+  {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+</style>
+</html>

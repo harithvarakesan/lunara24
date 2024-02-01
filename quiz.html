@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Bee</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="dis_style.css" />
+  </head>
+  <body>
+    <div class="open">
+      <div class="layer"></div>
+      
+    </div>
+     <section id="blur">      
+      <div class="bannerText">
+        <h2>IMPELLZ '23</h2><br>
+        <h3>Quiz Bee</h3>
+        <p style="color: #fff; font-size: 25px;" >Quizzes lead in gaining a broad or specialized understanding of a subject. participants can "think outside the box" or from diverse perspectives by participating in quiz tournaments.</p>
+        <a href="#" onclick="toggle()">Know more</a>
+      </div>
+      
+      <div class="element1"></div>
+      <div class="element2"></div>
+    </section>
+
+    <header style="position: absolute;
+    top: 0;">
+      <nav>
+        <a href="#home" id="logo"><img src="headlogo.png" style="width:150px;"></a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="index.html" >Home</a>
+          </li>
+          <li>
+            <a href="TECHNICAL.html" >Technical</a>
+          </li>
+          <li>
+            <a href="NON-TECHNICAL.html" >Non-Technical</a>
+          </li>
+          <li>
+            <a href="ack.html">Accommodation</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="price.html" style="background:linear-gradient(45deg,#141da2,#9b5cf6);padding: 10px 10px;">Register</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div id="popup">
+            <h2>Paper Presentation</h2>
+            <strong>Rules:</strong>
+        <ul>
+              <li><p>Team size: 1 - 4</p></li>
+              <li><p>PPT slides: 7 - 10 slides </p></li>
+              <li><p>Format: IEEE format is mandatory (follow given template)</p></li>
+          <li><p>Duration: 5 mins - Presentation</p></li>
+          <li><p>Duration: 2 mins - Q/A session</p></li>
+            </ul>
+            
+
+            <br>
+            <strong>Topics:</strong>
+            <ul>
+              <li><p>Machine Learning</p></li>
+              <li><p>Cloud Technology</p></li>
+              <li><p>BlockChain Technology</p></li>
+              <li><p>Cyber Security</p></li>
+              <li><p>Big Data Analytics</p></li>
+              <li><p>NLP Concepts with Artificial Intelligence</p></li>
+              <li><p>Wireless Network Communication (WNC)</p></li>
+          <li><p>Others</p></li>
+            </ul>
+            
+            <a href="format.pdf">Reference</a>
+            <a href="#" onclick="toggle()">Close</a>
+
+
+        </div><br>
+    <script>
+      function toggle(){
+              var blur = document.getElementById('blur');
+              blur.classList.toggle('active');
+              var blur = document.getElementById('blur');
+              popup.classList.toggle('active');
+            }
+
+    </script>
+
+    <script src="dis_script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art The Person</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="dis_style.css" />
+  </head>
+  <body>
+    <div class="open">
+      <div class="layer"></div>
+      
+    </div>
+     <section id="blur">      
+      <div class="bannerText">
+        <h2>IMPELLZ '23</h2><br>
+        <h3>Art The Person</h3>
+        <p style="color: #fff; font-size: 25px;">  Art competitions will help you to gain  a unique immortal exposure which allows them to display self-expression and supports their creative ideas. </p>
+        <a href="#" onclick="toggle()">Know more</a>
+      </div>
+      <div class="element1"></div>
+      <div class="element2"></div>
+      
+      
+    </section>
+
+    <header style="position: absolute;top: 0;">
+      <nav>
+        <a href="#home" id="logo"><img src="headlogo.png" style="width:150px;"></a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="index.html" >Home</a>
+          </li>
+          
+        </ul>
+      </nav>
+    </header>
+    
+    <div id="popup">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Technical</a></li>
+              <li><a href="#">Non-Technical</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div><br>
+    <script>
+      function toggle(){
+              var blur = document.getElementById('blur');
+              blur.classList.toggle('active');
+              var blur = document.getElementById('blur');
+              popup.classList.toggle('active');
+            }
+
+    </script>
+
+    <script src="dis_script.js"></script>
+  </body>
+</html>

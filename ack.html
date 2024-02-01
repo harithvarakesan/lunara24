@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ack & Food</title>
+        <link rel="style sheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <meta charset="utf-8">
+		<title>WEBCAM</title>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+       
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=CJfJ2mx4tnUmSHSNwzS_T_SIwddkHLLwzqejS6VvDVs8MMgz5u8EU8KQLyzvLE_lhp-hKvVnNGG7rnbhv8DjNHnAAHHRWgxaS945E01e3n-fsvNJ-LW80911MtF4fwdNoy1995Cx2UDwDvDlyz6BU1qTSgNwt_NQTZRaX5RUvsKOWXFoZxYdmtQxjYNH_Pa8DkRZaCG2JWQmazxNyKuONpH2UWJ_IL_XvAjohh4_Yd8sJsx81LAcLjKf4WAIxJhnBTsNwyySVg0v05imyCmpzxAHA1dBpEXbQa94HW0XRnP2bfRkgeLD-q9XDwkE25YF6UePlijKxuEX2CFz30L5kAuayv8gaYCVoiaZQPWcpUD4_rj0QVxGzVhDctSJfc3E6Ey2IYCei3UhgCmgNXELc_Ir_VQcUch6bBeCj-7ocv80rmAUIXmPgPmoczpYGQ8eAuqITGmRkn3kPrMrTu8hhkROswpztfN7MjurrppN1TpnQCcfWRetf6gEbn_BQ1oko7j4NcmDNUKu1AAe3ePeYjEPGlfSy4Wbg520E4abKMgwsqMBh_egnl_QQXxG8MVFm-M2Tpa-lsXyzbzz8chxfMTVDikl0FpDbddQz9NBjxMwO0wWgtUqTNa5aIpLwfYRJpmxGGJs5bHQyFFOJkdZ5lrlttnWFfywxhpWQBq51biNO2pjCsxeU8c4X4QvoNftHFB9el0mQckx5QaDApCUECGp6rw1q9fsTEKM0g4cjjS5UqXu377pw5lFe5nErQJ8J4hng25nhnZdwBg7nyBvTilvhQHEUFx9rgN3x79-VT3fhA9gic5BzOAZ72q0FdQ6gAvrlb0r6YOkRA5Vu3IVDJOMUM0euDgcmbkDg4uHxW0L4NkuDjS4Zd3tDZi4pX0l9ZN5KtCs72n30mUP8ILC69sUFEtISnIT9jAHVTaAI2f0tQQlZNkZnP42_zGtDxWb_t7td2XCVdcywLKQKvdSkoxYX54E5B8zBgPGT8SsdQuDRa0FxKztmK88TVPSih0lCiMF0aAwssO_sN5FA2LxGBVs59TQXkdxqr0SWw3xM2YqNuOo24MgSigKfiWyNDo_9CY4sho1ZuNdxHSVlvRhq8mx6r7OR-HtNA86aNSKnytC0IzTi-0HSM9SgTnOxbtmMoFZ9rnViRoPjHPWQx6FVmYK9bMQ_WR8JwoCnkzIlz8FpgalrGxSG6oPC-hUMXafRF61VviS-FIFnn_NIGTJcYwkTQ39savJui9F8w5TfbiH2F35HKc95y4ip6IH0hATw6rQdTvQBaOCCGT693BB14kvYSwDRpCLnWOO9x6LesMHHY88zaEX4fMr545OUB6uepMiUat2QWe9LlXL4l71k3yYYO80fu11MnwkdFVMfB14ROXia-xpn2BMfH275ctwK68tZnuC6ZMF5BQ3B3P-188gw5qSl-xcRM7nJLy84Zqihkro7au97FSwKmxg5ztWK_F_D7qg7k2rf9yzYSdgsvd0QAjTHbuSVSQy9v4VuFj_cfCVjvrs_hk5hcHajCsUezJ9pw5NXF_ebWorIK3gnyfBDIklhNbI8Lf39otAYwjVYpoIVoxScNChHia4z__1Sk-0Kh2v27TjcXLtiWdxLQ" nonce="5814f7e7b9add8339ca0f50b75ac284c" charset="UTF-8"></script></head>
+    <style>
+    @import url('https://fonts.googleeapis.com/css?family=PT+Sans');
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+body
+{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(dj.jpg);
+}
+.card
+{
+position: relative;
+width: 920px;
+height: 480px;
+background: #fff;
+border-radius: 20px;
+box-shadow: 0 15px, 35px rgba(0,0,0,0,0.25);
+}
+.card .poster
+{
+    position: relative;
+    overflow: hidden;
+}
+.card .poster::before
+{
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #ffffff 50%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+.card:hover .poster::before
+{
+    bottom: 0px;
+}
+.card .poster img
+{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.card:hover .poster img
+{
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+.card .details
+{
+    position: absolute;
+    bottom: -175px;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+.card:hover .details{
+    bottom: 0px;
+}
+.card .details .logo
+{
+    max-width:180px ;
+}
+.card .details h3
+{
+    font-size: 0.8em;
+    color: #fff;
+}
+.card .details .rating
+{
+    position: relative;
+    padding: 5px 0;
+}
+.card .details .rating .fa-star
+{
+    color: #f7f406;
+    font-size: 1em;
+}
+.card .details .rating span
+{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+
+.card .details .tags span
+{
+    padding: 2px 5px;
+    color: #fff;
+    background: #03a8f5;
+    border-radius: 4px;
+}
+.card .details .tags span:nth-child(2)
+{
+    background: #ff5722;  
+}
+.card .details .info
+{
+color: #fff;
+margin-top: 20px;
+}
+.card .details .cast
+{
+    position: relative;
+}
+.card .details .cast h4
+{
+  color: #fff;
+  margin-top: 10px;  
+}
+.card .details .cast ul
+{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.card .details .cast ul li
+{
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.card .details .cast ul li img
+{
+    max-width: 100%;
+}
+</style>
+
+    <body>
+        <div class="open">
+			<div class="layer"></div>
+			
+		</div>
+		<div class="header" style="top:50px">
+			<ul>
+				 <li>
+					<img src="headlogo.png" style="width: 350px;">
+				</li>
+				<li>
+					<a href="index.html" >Home</a>
+				</li>
+				<li>
+					<a href="TECHNICAL.html" >Technical</a>
+				</li>
+				<li>
+					<a href="NON-TECHNICAL.html" >Non-Technical</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="price.html" style="background:linear-gradient(45deg,#141da2,#9b5cf6);padding: 10px 10px;">Register</a>
+				</li>
+			</ul>
+        </div>
+        <div class="card">
+        <div class="poster">
+        <img src="hostel.jpg"></img>
+        <div class="details">
+
+        <h1>FOOD & ACCOMODATION</h1>
+        <br>
+        <ul >
+            <li><p>Food and accommodation will be provided to participants.</p></li>
+            <li><p>Accommodation will be free of charge.</p></li>
+            <li><p>Food will be on a charged basis.</p></li>
+            <li><p>Lunch during 4th March is included in the Registration Fees for External participants.</p></li>
+            <li><p>Kindly fill the accommodation request form.</p></li>
+            <li>  </li>
+        </ul>
+        <div><center><a href="https://docs.google.com/forms/d/e/1FAIpQLSd7-c6MVoBPa-qF4S83fqg5of9efJLFcYoBLtVSS3CX6cPw4Q/viewform" style="color: #ffffff; padding: 20px 20px; background:linear-gradient(45deg,#141da2,#9b5cf6);border-radius: 15px;">Accomodation Registration</a></center></div>
+    </div>
+
+        
+      
+
+
+        </div>
+    </body>
+    <style>
+        .details ul li 
+        {
+            text-decoration: none;
+            color: #000;
+            list-style: none;
+            padding:10px;
+        }
+    </style>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
