@@ -1,0 +1,18 @@
+::-webkit-scrollbar {
+    width: 0px;
+  }
+.RulesAndTopic{
+    background-color: aqua;    
+    height: 80vh;
+    width: 70vh;
+    position:relative;
+    left: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.RulesAndTopic>p{
+    font-size: 90px;
+}

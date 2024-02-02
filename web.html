@@ -15,18 +15,48 @@
     />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="dis_style.css" />
+    <link rel="stylesheet" href="RulesAndTopic.css">
   </head>
   <body>
     <div class="open">
       <div class="layer"></div>
       
     </div>
-     <section id="blur">      
+     <section id="blur" >      
       <div class="bannerText">
         <h2>IMPELLZ '23</h2><br>
         <h3>Web Page Design</h3>
         <p style="color: #fff;font-size: 25px;">  Frontend or to put it simply a presentation layer is a part of a website that a user or a customer interacts with. A front-end developer plays a major role in making the website user friendly</p>
-        <a href="#" onclick="toggle()">Know more</a>
+      <!--   <a href="#" onclick="toggle()">Know more</a> -->
+      </div>
+      <div class="RulesAndTopic">
+        <div><h2>Paper Presentation</h2>
+        <strong>Rules:</strong>
+    <ul>
+          <p>Team size: 1 - 4</p>
+          <p>PPT slides: 7 - 10 slides </p>
+          <p>Format: IEEE format is mandatory (follow given template)</p>
+      <p>Duration: 5 mins - Presentation</p>
+      <p>Duration: 2 mins - Q/A session</p>
+        </ul>
+        
+
+        <br>
+        <strong>Topics:</strong>
+        <ul>
+          <p>Machine Learning</p>
+          <p>Cloud Technology</p>
+          <p>BlockChain Technology</p>
+          <p>Cyber Security</p>
+          <p>Big Data Analytics</p>
+          <p>NLP Concepts with Artificial Intelligence</p>
+          <p>Wireless Network Communication (WNC)</p>
+      <p>Others</p>
+        </ul>
+        
+        <a href="format.pdf">Reference</a>
+        <a href="#" onclick="toggle()">Close</a>
+      </div>
       </div>
       <div class="element1"></div>
       <div class="element2"></div>
@@ -62,7 +92,7 @@
       </nav>
     </header>
     
-    <div id="popup">
+    <!-- <div id="popup">
             <h2>Paper Presentation</h2>
             <strong>Rules:</strong>
         <ul>
@@ -91,7 +121,7 @@
             <a href="#" onclick="toggle()">Close</a>
 
 
-        </div><br>
+        </div><br> -->
     <script>
       function toggle(){
               var blur = document.getElementById('blur');
