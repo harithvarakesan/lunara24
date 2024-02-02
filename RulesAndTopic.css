@@ -2,9 +2,11 @@
     width: 0px;
   }
 .RulesAndTopic{  
-    height: 80vh;
+    background-color: rgba(189, 215, 221, 0.352);
+    height: 70vh;
     width: 70vh;
     position:relative;
+    top:40px;
     left: 400px;
     display: flex;
     justify-content: center;
@@ -12,6 +14,15 @@
     overflow: scroll;
     overflow-x: hidden;
 }
-.RulesAndTopic>p{
+.RulesAndTopic h2{
+    font-size: 30px;
+    color:white
+}
+.RulesAndTopic strong{
     font-size: 20px;
+    color: white
+}
+.RulesAndTopic li{
+    font-size: 15px;
+    color: white
 }
