@@ -1,8 +1,7 @@
 ::-webkit-scrollbar {
     width: 0px;
   }
-.RulesAndTopic{
-    background-color: aqua;    
+.RulesAndTopic{  
     height: 80vh;
     width: 70vh;
     position:relative;
@@ -14,5 +13,5 @@
     overflow-x: hidden;
 }
 .RulesAndTopic>p{
-    font-size: 90px;
+    font-size: 20px;
 }
