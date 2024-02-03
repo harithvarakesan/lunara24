@@ -526,10 +526,39 @@ ul.rb li .timestamp {
   border-radius: 5px;
 }
 /*Rainbow Styling Ends*/
+.scrolled {
+    padding-top: 0;
+}
 
 
     </style>    
 </head>
+<script>
+    window.addEventListener('scroll', function() {
+        var header = document.querySelector('.header_area');
+        var scrollLogo = document.getElementById('scrollLogo');
+        
+        // Check if the user has scrolled down enough to reveal the scrollLogo
+        if(window.scrollY > 100) {
+            scrollLogo.style.display = 'block';
+            // Hide the original logo
+            header.querySelector('img').style.display = 'none';
+        } else {
+            scrollLogo.style.display = 'none';
+            header.querySelector('img').style.display = 'block';
+        }
+        
+        var navbar = document.querySelector('.navbar');
+        
+        // Check if the user has scrolled down
+        if(window.scrollY > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        } 
+
+    });
+</script>
 
 <body>
 
@@ -539,7 +568,7 @@ ul.rb li .timestamp {
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <img style="margin-top: 1%; width:200px; height: 100px;" src="images/images/Lunara_logo.png" width="30%">
+                    <img style="margin-top: 1%;" src="images\headlogo.png" width="30%">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
