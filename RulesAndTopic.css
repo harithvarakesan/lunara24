@@ -6,6 +6,7 @@
     height: 80vh;
     width: 70vh;
     position:relative;
+    top:40px;
     left: 400px;
     display: flex;
     justify-content: center;
@@ -15,4 +16,16 @@
 }
 .RulesAndTopic>p{
     font-size: 90px;
+}
+.RulesAndTopic h2{
+    font-size: 30px;
+    color:white
+}
+.RulesAndTopic strong{
+    font-size: 20px;
+    color: white
+}
+.RulesAndTopic li{
+    font-size: 15px;
+    color: white
 }
