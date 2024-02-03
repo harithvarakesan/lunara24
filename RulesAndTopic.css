@@ -15,6 +15,9 @@
     overflow-x: hidden;
     border-radius: 20px;
 }
+.RulesAndTopic>p{
+    font-size: 90px;
+}
 .RulesAndTopic h2{
     font-size: 30px;
     color:white;
