@@ -3,13 +3,12 @@
   }
 .RulesAndTopic{  
     background-color: rgba(189, 215, 221, 0.352);
-    height: 70vh;
-    width: 70vh;
+    height: 540px;
+    width: 540px;
     position:relative;
-    top:40px;
-    left: 400px;
+    top:140px;
+    left: 850px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     overflow: scroll;
@@ -18,18 +17,27 @@
 }
 .RulesAndTopic h2{
     font-size: 30px;
-    color:white
+    color:white;
+    display:flex;
 }
 .RulesAndTopic strong{
     font-size: 20px;
-    color: white
+    color: white;
+    display:flex;
 }
 .RulesAndTopic li{
     font-size: 15px;
-    color: white
+    color: white;
+    display:flex;
 }
 button{
     height: 30px;
     width: 80px;
     border-radius: 10px;
+}@media(max-width:720px){
+    .RulesAndTopic{
+        position: relative;
+        top:550px;
+        
+    }
 }
