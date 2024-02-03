@@ -362,6 +362,25 @@ button:focus {
   text-decoration: underline;
 }
 
+.nav-link{
+  font-family: 'Protest Riot', sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+.container h1{
+  font-family: 'Protest Riot', sans-serif;
+}
+
+.label{
+  font-family: 'Protest Riot', sans-serif;
+}
+
+.nav-item{
+  text-align: center;
+  margin-top: 10px;
+}
+
 .header_area .navbar .nav .nav-item .nav-link:after {
   display: none;
 }
@@ -4396,6 +4415,13 @@ h6 {
   background: #6247ea;
 }
 
+@media (max-width:600px){
+  .rightbox{
+    width: 200px;
+  }
+}
+
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
