@@ -3,12 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 *:not(i) {
   font-family: "Poppins", sans-serif;
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -16,15 +19,23 @@ header {
   padding: 3rem 5rem;
 }
 
-.open{
-  background: url(gigfy1.gif);
+
+section {
+
+  width: 100%;
+  height: 100%;
+  background: url(banner-home-banner.gif);
+
   background-size: cover;
-  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-
-.open
-{
+.open {
   position: fixed;
   top: 0;
   left: 0;
@@ -33,8 +44,8 @@ header {
   pointer-events: none;
   z-index: 1fff0;
 }
-.open .layer
-{
+
+.open .layer {
   position: absolute;
   top: 0;
   left: 0;
@@ -43,25 +54,24 @@ header {
   transform-origin: top;
   animation: open 0.5s ease-in-out forwards;
 }
-.open .layer:nth-child(1)
-{
+
+.open .layer:nth-child(1) {
   background: #fff;
   z-index: 2;
 }
-.open .layer:nth-child(2)
-{
+
+.open .layer:nth-child(2) {
   background: #03a9f4;
   animation-delay: 0.5s;
   z-index: 1;
 }
-@keyframes open
-{
-  0%
-  {
+
+@keyframes open {
+  0% {
     transform: scaleY(1);
   }
-  100%
-  {
+
+  100% {
     transform: scaleY(0);
   }
 }
@@ -69,17 +79,16 @@ header {
 
 
 
-.bannerText
-{
+.bannerText {
   position: absolute;
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
   max-width: 500px;
 }
+
 .bannerText h2,
-.bannerText h3
-{
+.bannerText h3 {
   position: relative;
   margin: 0;
   padding: 0;
@@ -90,20 +99,22 @@ header {
   transform: scaleX(0);
   animation: revealTextReverse 1s ease-in-out forwards;
 }
-.bannerText h2
-{
+
+.bannerText h2 {
   font-size: 6em;
   animation-delay: 1s;
-  font-family: "Blanka"; src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot"); src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg"); 
+  font-family: "Blanka";
+  src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot");
+  src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg");
 }
-.bannerText h3
-{
+
+.bannerText h3 {
   font-size: 3em;
   animation-delay: 2s;
 }
+
 .bannerText h2:before,
-.bannerText h3:before
-{
+.bannerText h3:before {
   content: '';
   position: absolute;
   top: 0;
@@ -115,34 +126,32 @@ header {
   animation: revealText 1s ease-in-out forwards;
   animation-delay: 2s;
 }
-.bannerText h3:before
-{
+
+.bannerText h3:before {
   animation-delay: 3s;
 }
-@keyframes revealText
-{
-  0%
-  {
+
+@keyframes revealText {
+  0% {
     transform: scaleX(1);
   }
-  100%
-  {
+
+  100% {
     transform: scaleX(0);
   }
 }
-@keyframes revealTextReverse
-{
-  0%
-  {
+
+@keyframes revealTextReverse {
+  0% {
     transform: scaleX(0);
   }
-  100%
-  {
+
+  100% {
     transform: scaleX(1);
   }
 }
-.bannerText p
-{
+
+.bannerText p {
   opacity: 0;
   color: white;
   font-weight: 400;
@@ -150,19 +159,18 @@ header {
   animation: fadeIn 1s linear forwards;
   animation-delay: 4s;
 }
-@keyframes fadeIn
-{
-  0%
-  {
+
+@keyframes fadeIn {
+  0% {
     opacity: 0;
   }
-  100%
-  {
+
+  100% {
     opacity: 1;
   }
 }
-.bannerText a
-{
+
+.bannerText a {
   opacity: 0;
   display: inline-block;
   margin: 20px 0 0;
@@ -176,21 +184,20 @@ header {
   animation: fadeInBottom 0.5s linear forwards;
   animation-delay: 5s;
 }
-@keyframes fadeInBottom
-{
-  0%
-  {
+
+@keyframes fadeInBottom {
+  0% {
     transform: translateY(50px);
     opacity: 0;
   }
-  100%
-  {
+
+  100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
-.bulb
-{
+
+.bulb {
   opacity: 0;
   position: absolute;
   right: 10%;
@@ -200,63 +207,63 @@ header {
   animation-delay: 6s;
   z-index: 100;
 }
-.sci
-{
+
+.sci {
   position: absolute;
   bottom: 15px;
   right: 30px;
   display: flex;
   flex-direction: column;
 }
-.sci li
-{
+
+.sci li {
   opacity: 0;
   list-style: none;
   padding: 10px 0;
   text-align: center;
   animation: fadeInBottom 0.5s linear forwards;
 }
+
 .header ul li:nth-child(1),
-.sci li:nth-child(1)
-{
+.sci li:nth-child(1) {
   animation-delay: 5s;
 }
+
 .header ul li:nth-child(2),
-.sci li:nth-child(2)
-{
+.sci li:nth-child(2) {
   animation-delay: 5.25s;
 }
+
 .header ul li:nth-child(3),
-.sci li:nth-child(3)
-{
+.sci li:nth-child(3) {
   animation-delay: 5.5s;
 }
+
 .header ul li:nth-child(4),
-.sci li:nth-child(4)
-{
+.sci li:nth-child(4) {
   animation-delay: 5.75s;
 }
+
 .header ul li:nth-child(5),
-.sci li:nth-child(5)
-{
+.sci li:nth-child(5) {
   animation-delay: 6s;
 }
+
 .header ul li:nth-child(6),
-.sci li:nth-child(6)
-{
+.sci li:nth-child(6) {
   animation-delay: 6.25s;
 }
-.sci li a
-{
+
+.sci li a {
   font-size: 1.2em;
   color: #fff;
 }
-.sci li a .active
-{
+
+.sci li a .active {
   color: black;
 }
-.header
-{
+
+.header {
   position: absolute;
   top: 0;
   left: 0;
@@ -268,8 +275,8 @@ header {
   justify-content: space-between;
   box-sizing: border-box;
 }
-.header .logo
-{
+
+.header .logo {
   opacity: 0;
   margin: 0;
   padding: 0;
@@ -278,26 +285,26 @@ header {
   animation: fadeIn 0.5s linear forwards;
   animation-delay: 5s;
 }
-.header ul
-{
+
+.header ul {
   margin: 0;
   padding: 0;
   z-index: 100;
   display: flex;
 }
-.header ul li
-{
+
+.header ul li {
   opacity: 0;
   list-style: none;
   margin: 0 10px;
   animation: fadeInRight 0.5s linear forwards;
 }
-.header ul li:last-child
-{
+
+.header ul li:last-child {
   margin-right: 0;
 }
-.header ul li a
-{
+
+.header ul li a {
   text-decoration: none;
   font-size: 15px;
   color: #fff;
@@ -306,21 +313,20 @@ header {
   padding: 5px 10px;
   letter-spacing: 2px;
 }
+
 .header ul li a.active,
-.header ul li a:hover
-{
+.header ul li a:hover {
   background: #fff;
   color: #000;
 }
-@keyframes fadeInRight
-{
-  0%
-  {
+
+@keyframes fadeInRight {
+  0% {
     transform: translateX(150px);
     opacity: 0;
   }
-  100%
-  {
+
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
@@ -345,29 +351,34 @@ header {
 
 
 nav {
-  
+
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
+
 nav a {
   font-size: 1.8rem;
   text-decoration: none;
 }
+
 nav a#logo {
   color: #000000;
   font-weight: 700;
 }
+
 nav ul a {
   color: #ffffff;
   font-weight: 600;
 }
+
 nav ul a:hover {
   border-bottom: 2px solid #ffffff;
 }
@@ -375,6 +386,7 @@ nav ul a:hover {
 h1 {
   font-size: 4rem;
 }
+
 #ham-menu {
   display: none;
 }
@@ -382,26 +394,32 @@ h1 {
 nav ul.active {
   left: 0;
 }
+
 @media only screen and (max-width: 991px) {
   html {
     font-size: 56.25%;
   }
+
   header {
     padding: 2.2rem 5rem;
   }
 }
+
 @media only screen and (max-width: 767px) {
   html {
     font-size: 50%;
   }
+
   #ham-menu {
     display: block;
     color: #ffffff;
   }
+
   nav a#logo,
   #ham-menu {
     font-size: 3.2rem;
   }
+
   nav ul {
     background-color: black;
     position: fixed;
@@ -417,13 +435,16 @@ nav ul.active {
     gap: 0;
   }
 }
+
 @media only screen and (max-width: 575px) {
   html {
     font-size: 46.87%;
   }
+
   header {
     padding: 2rem 3rem;
   }
+
   nav ul {
     top: 65.18px;
     height: calc(100vh - 65.18px);
@@ -432,51 +453,54 @@ nav ul.active {
 
 
 
- section #blur.active{
-    filter: blur(30px);
-    pointer-events: none;
-    user-select: none;
-    }
-    #popup a{
-        position: relative;
-        padding: 5px 20px;
-        display: inline-block;
-        
-        text-decoration: none;
-        color: #fff;
-        background: #111;
+section #blur.active {
+  filter: blur(30px);
+  pointer-events: none;
+  user-select: none;
+}
 
-    }
-    .top
-    {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      gap: 40px;
-    }
-    #popup{
-        position: fixed;
-        display: block;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 100%px;
-        padding: 50px;
-        border-top-right-radius: 50%;
-        border-top-left-radius: 20px;
-        box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
-        background: #fff;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    #popup.active{
-        visibility: visible;
-        opacity: 1;
-        position: relative;
-        display: block;
-        
-        top: 0;
-        transition: 0.5s;
+#popup a {
+  position: relative;
+  padding: 5px 20px;
+  display: inline-block;
 
-    }
+  text-decoration: none;
+  color: #fff;
+  background: #111;
+
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 40px;
+}
+
+#popup {
+  position: fixed;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%px;
+  padding: 50px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 20px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  display: block;
+
+  top: 0;
+  transition: 0.5s;
+
+}

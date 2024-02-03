@@ -109,7 +109,86 @@
   border-radius: 5px;
 }
 /*Rainbow Styling Ends*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: black;
+  text-align: center;
+}
 
+.card {
+  flex-basis: calc(33.33% - 20px); /* Adjust the width based on your preference */
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.card h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    flex-basis: calc(100% - 20px);
+  }
+}
+
+
+.event-details {
+  margin-bottom: 20px;
+}
+
+.events{
+  display: inline-block;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.events h3{
+  font-size: 18px;
+  color: #555;
+}
+
+.card ul {
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 5px;
+}
+
+.prize p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.registration-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.registration-btn:hover {
+  background-color: #0056b3;
+}
+b{
+    color: black;
+}
     </style>
 
 </head>
@@ -158,7 +237,7 @@
         <div class="banner_inner d-flex align-items-center">
             <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
             <div class="container">
-                <div class="banner_content text-center">
+                <div class="banner_content text-center" style="width: 100vw;">
                     <div class="page_link">
                         <a href="index.html">Home</a>
                         <a href="price.html">Registration</a>
@@ -184,78 +263,38 @@
 
     <!--================Price Area =================-->
     <section class="price_area">
-        <div class="container">
-            <div class="main_title p_50 box-shad rad-10 rainbow">
-                <h2 class="p10">Registration Testimonial</h2>
-                <div class="col-lg-7 m-auto text-justify">
-                    <ul class="font-18">
-                        <li class="p10">Personal Details</li>
-                        <li class="p10">ID Card PDF (Both sides) below 1MB</li>
-                        <li class="p10">Payment Screenshot & Details</li>
-                        <li class="p10"><h4>Paper Presentation:</h4>-> Team Name <br>-> Abstract (below 1MB) </li>
-                        <li class="p10">
-                            <h4>Idea Presentatiom</h4>-> Team Name <br>-> Abstract with photo of idea or flowchart</li> 
-                        </li>
-                        </li>
-                        <li class="p10">
-                            <h4>Project Expo</h4>-> Team Name <br>-> Photo of your model<br> (If your model is not ready yet and you are confident to make it before the event, you can upload CAD, 3D or a description about your project in less than 10MB)</li>
-                        </li>
-                        <li class="p10">
-                            <h4>Chatbot</h4>-> Team Name <br>-> Chatbot's filed of expertise</li> 
-                        </li>
-                        <li class="p10">
-                            <h4>Web Design</h4>-> Team Name <br>-> Website description</li> 
-                        </li>
-                        <li class="p10">
-                            <h4>WebCam</h4>-> Team Name</li> 
-                        </li>
-                        <li class="p10">
-                            <h4>Account Details</h4>-> Name of the Account  :   BIT-CENTRE FOR ADVANCE STUDIES <br>-> Account Number    :   911010036862582 <br>->IFSC Code    :   UTIB0000368<br>->Name of the Branch  :   Sathyamangalam<br>->IF POSSIBLE ADD NOTE AS :   IMPELLZ '23</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="price_inner row main_title">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="price_item">
-
-                        <!-- <a class="price_btn" href="#">Get Registered</a> -->
+        <div class="offers">
+            <h1 style="text-align: center;color: black;">COMBO OFFERS</h1>
+            <div class="container">
+                <div class="card">
+                <h2>Combo 1</h2>
+                <p>1 Techinal + 2 Non-Technical</p>
+                <div class="event-details">
+                    <div class="events">
+                      <h3>Technical Events:</h3>
+                      <ul>
+                        <li><b>Category 1: </b>Event 1/Event 2/Event 3</li>
+                        <li><b>Category 2: </b>Event 1/Event 2/Event 3</li>
+                      </ul>
+                      <h3>Non-Technical Events:</h3>
+                      <ul>
+                        <li><b>Category 3: </b>Event 1/Event 2/Event 3</li>
+                      </ul>
                     </div>
+                  </div>
+                  <div class="prize">
+                    <p>Prize: $1000</p>
+                  </div>
+                  <a href="#" class="registration-btn">Register Now</a>
                 </div>
-
-                <div class="col-lg-4 col-sm-6">
-                    <div class="price_item">
-                        <div class="price_text">
-                            <h3>ENGINEERING STUDENT </h3>
-                            <h5>Persuing UG or PG</h5>
-                            <h2>&#8377;600</h2>
-                            <b style="font-size: 20px;">PER HEAD</b>
-                            <p style="text-align:center;">(GST INCLUDED)</p>
-                            <ul class="list">
-                                
-
-                            </ul>
-                        </div>
-                        <!-- <a class="price_btn" href="#">Get Registered</a> -->
-                    </div>
+                <div class="card">
+                <h2>Combo 2</h2>
+                <p>This is the content of Card 2</p>
                 </div>
-            </div>
-            <div class="main_title p_50 box-shad rad-10 rainbow">
-                <h2>Important</h2>
-                <div class="col-lg-8 m-auto">
-                    <h4 class="hero p10">
-                        Each participant needs to register individually
-                    </h4>
-                        
-                    <h4 class="hero p10">
-                        There will be no refunds granted
-                    </h4>
-                    
+                <div class="card">
+                <h2>Combo 3</h2>
+                <p>This is the content of Card 3</p>
                 </div>
-                <!-- <div class="col-lg-9 m-auto">
-                    <strong>For payment use Gpay</strong><br>
-                    <img src="img/gpay.png" class="img-fluid r-50" alt="" height="100px" width="100px">
-                    <p class="hero_txt font-18">9942984621</p>
-                </div> -->
             </div>
         </div>
     </section><p style="text-align: center; font-size: 250%;">👇</p>
