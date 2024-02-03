@@ -9,10 +9,12 @@
     top:40px;
     left: 400px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     overflow: scroll;
     overflow-x: hidden;
+    border-radius: 20px;
 }
 .RulesAndTopic>p{
     font-size: 90px;
@@ -28,4 +30,9 @@
 .RulesAndTopic li{
     font-size: 15px;
     color: white
+}
+button{
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
 }
