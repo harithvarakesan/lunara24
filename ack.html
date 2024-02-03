@@ -1,167 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACCOMMODATION</title>
     <style>
-         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('bg.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
 
-        .header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-        }
+      .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+      }
 
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-        li {
-            margin: 0;
-            padding: 0;
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      li a {
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 5px;
+        color: #fff;
+      }
+
+      li a:hover {
+        background: linear-gradient(45deg, #141da2, #9b5cf6);
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 800px;
+        background: rgba(255, 255, 255, 0.675);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .card img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .details {
+        padding: 20px;
+      }
+
+      h1 {
+        color: #141da2;
+      }
+
+      ul.card-details {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+      }
+
+      ul.card-details li {
+        margin-bottom: 10px;
+      }
+
+      p {
+        text-align: left;
+      }
+
+      a.registration-link {
+        text-decoration: none;
+        color: #fff;
+        background: linear-gradient(45deg, #141da2, #9b5cf6);
+        padding: 15px;
+        border-radius: 15px;
+        display: block;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        .card {
+          width: 90%;
         }
 
         li a {
-            text-decoration: none;
-            padding: 10px;
-            margin: 0 5px;
-            color: #fff;
+          font-size: 14px;
         }
+      }
 
-        li a:hover {
-            background: linear-gradient(45deg, #141da2, #9b5cf6);
-        }
-
+      @media only screen and (max-width: 768px) {
         .card {
-            display: flex;
-            flex-direction: column;
-            width: 80%;
-            max-width: 800px;
-            background: rgba(255, 255, 255, 0.675);
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
+          width: 95%;
         }
 
-        .card img {
-            width: 100%;
-            object-fit: cover;
+        .header img {
+          height: 100px;
         }
 
-        .details {
-            padding: 20px;
+        li a {
+          font-size: 12px;
         }
-
-        h1 {
-            color: #141da2;
-        }
-
-        ul.card-details {
-            list-style: none;
-            padding: 0;
-            text-align: left;
-        }
-
-        ul.card-details li {
-            margin-bottom: 10px;
-        }
-
-        p {
-            text-align: left;
-        }
-
-        a.registration-link {
-            text-decoration: none;
-            color: #fff;
-            background: linear-gradient(45deg, #141da2, #9b5cf6);
-            padding: 15px;
-            border-radius: 15px;
-            display: block;
-            text-align: center;
-        }
-
-        @media only screen and (max-width: 1200px) {
-            .card {
-                width: 90%;
-            }
-
-            li a {
-                font-size: 14px;
-            }
-        }
-
-        @media only screen and (max-width: 768px) {
-            .card {
-                width: 95%;
-            }
-
-            .header img {
-                height: 100px;
-            }
-
-            li a {
-                font-size: 12px;
-            }
-        }
-
-
-
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <ul>
-            <li>
-                <img src="lunara.png" style="height: 150px;" width="70%;">
-            </li>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="TECHNICAL.html">Technical</a>
-            </li>
-            <li>
-                <a href="NON-TECHNICAL.html">Non-Technical</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-            <li>
-                <a href="price.html" style="background: linear-gradient(45deg,#141da2,#9b5cf6);padding: 10px 10px;">Register</a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <img src="lunara.png" style="height: 150px" width="70%;" />
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="TECHNICAL.html">Technical</a>
+        </li>
+        <li>
+          <a href="NON-TECHNICAL.html">Non-Technical</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a
+            href="price.html"
+            style="
+              background: linear-gradient(45deg, #141da2, #9b5cf6);
+              padding: 10px 10px;
+            "
+            >Register</a
+          >
+        </li>
+      </ul>
     </div>
     <div class="card">
-        <!-- <img src="" alt="Hostel Image"> -->
-        <div class="details">
-            <h1>FOOD & ACCOMMODATION</h1>
-            <br>
-            <ul class="card-details">
-                <p>Food and accommodation will be provided to participants. <br><br>Accommodation will be free of charge. <br><br>Food will be on a charged basis. <br><br> Lunch during 4th March is included in the Registration Fees for External participants. <br><br>Kindly fill the accommodation request form.<br><br></p>
-                
-            </ul>
-            <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSd7-c6MVoBPa-qF4S83fqg5of9efJLFcYoBLtVSS3CX6cPw4Q/viewform" class="registration-link">Accommodation Registration</a></div>
+      <!-- <img src="" alt="Hostel Image"> -->
+      <div class="details">
+        <h1>FOOD & ACCOMMODATION</h1>
+        <br />
+        <ul class="card-details">
+          <p>
+            ✨Food and accommodation will be provided to participants.
+            <br /><br />✨Accommodation will be free of charge.
+            <br /><br />✨Food will be on a charged basis. <br /><br />
+            ✨Lunch during 4th March is included in the Registration Fees for
+            External participants. <br /><br />✨Kindly fill the accommodation
+            request form.<br /><br />
+          </p>
+        </ul>
+        <div>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd7-c6MVoBPa-qF4S83fqg5of9efJLFcYoBLtVSS3CX6cPw4Q/viewform"
+            class="registration-link"
+            >🚀Accommodation Registration</a
+          >
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
