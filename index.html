@@ -145,13 +145,42 @@ input[type="checkbox"] {
   }
 }
 
-@media (max-width:650px){
+
+
+@media (max-width:435px){
   .divi{
-    height: 50px;
-    width: 50px;
-    font-size: 25px;
+    height: 45px;
+    width: 45px;
+    font-size: 15px;
+  }
+
+  .ull{
+    
+    padding-left: 0px;
+
   }
 }
+
+
+@media (max-width:380x){
+  .divi{
+    height: 35px;
+    width: 35px;
+    font-size: 15px;
+  }
+
+  .checkbox{
+    
+    width: -30px;
+
+  }
+
+}
+
+
+
+
+
 
 /* div:before {
   content: "";
@@ -247,6 +276,18 @@ input[type="checkbox"]:checked ~ div {
   }
 }
 
+@media (max-width:405px){
+  .time-container{
+    width: 350px;
+  }
+}
+
+@media (max-width:360px){
+  .time-container{
+    width: 300px;
+  }
+}
+
 .leftbox {
   top: -5%;
   left: 5%;
@@ -260,6 +301,20 @@ input[type="checkbox"]:checked ~ div {
 .rightbox {
   padding: 0em 34rem 0em 0em;
   height: 100%;
+}
+
+@media (max-width:601px){
+  .rightbox{
+    padding-right: 0px;
+  }
+}
+
+@media (max-width:425px){
+  .time-container{
+    
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .rb-container {
@@ -530,6 +585,12 @@ ul.rb li .timestamp {
     padding-top: 0;
 }
 
+@media (max-width:395px){
+  .rb-item{
+    margin-left: 50px;
+  }
+}
+
 
     </style>    
 </head>
@@ -568,7 +629,7 @@ ul.rb li .timestamp {
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <img style="margin-top: 1%; width:200px; height: 100px;" src="images/images/Lunara_logo.png" width="30%">
+                    <img style="margin-top: 1%; width:180px; height: 90px;" src="images/images/Lunara_logo.png" width="30%">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -643,7 +704,7 @@ ul.rb li .timestamp {
                           LUNARA'24 (Free the drive of life to explore) is a National Level Event which is one of the proud venture of our Department of Computer Science & Engineering. We aim at bringing out the technological and inventive skills from all the students irrespective of domains all over the country. It is our immense pleasure to invite each and every unique mind with magnificent ideas longing for a stage to exhibit out.
                         </p>
                        
-                        <a class="main_btn" href="about-us.html">View More</a>
+                        <a class="main_btn" href="about-us.html" style="font-family: 'Protest Riot', sans-serif; font-size: 18px;">View More</a>
                     </div>
                 </div>
             </div>
@@ -667,7 +728,7 @@ ul.rb li .timestamp {
     <section class="welcome_area m_120 bg-img p_50">
         
         <section>
-            <h2 style="color: white; text-align: center; font-size: 7ch;" class="txt">Timeline</h2>
+            <h2 style="color: white; text-align: center; font-size: 7ch; font-family: 'Protest Riot', sans-serif;" class="txt">Timeline</h2>
             <div class="time-container">
               <div class="box">
                 
@@ -679,26 +740,26 @@ ul.rb li .timestamp {
               <div class="rightbox">
                 <div class="rb-container">
                   <ul class="rb">
-                    <li class="rb-item" ng-repeat="itembx">
+                    <li class="rb-item" ng-repeat="itembx" style="margin-left: 80px;">
                       <div class="timestamp">
-                        <b style="color: white;">1st APRIL</b> 2023
+                        <b style="color: white; font-family: 'Protest Riot', sans-serif;">1st APRIL</b> 2023
                       </div><br>
-                      <div class="item-title">Registration Closing .</div><br>
+                      <div class="item-title" style="font-family: 'Protest Riot', sans-serif;">Registration Closing .</div><br>
             
                     </li>
-                    <li class="rb-item" ng-repeat="itembx">
+                    <li class="rb-item" ng-repeat="itembx" style="margin-left: 80px;">
                       <div class="timestamp">
-                        <b style="color: white;">8th APRIL</b> 2023
+                        <b style="color: white; font-family: 'Protest Riot', sans-serif;">8th APRIL</b> 2023
                       </div><br>
-                      <div class="item-title">Notification of Acceptance .</div><br>
+                      <div class="item-title" style="font-family: 'Protest Riot', sans-serif;">Notification of Acceptance .</div><br>
             
                     </li>
             
-                    <li class="rb-item" ng-repeat="itembx">
+                    <li class="rb-item" ng-repeat="itembx" style="margin-left: 80px;">
                       <div class="timestamp">
-                    <b style="color: white;">12 & 13th APRIL</b> 2023
+                    <b style="color: white; font-family: 'Protest Riot', sans-serif;">12 & 13th APRIL</b> 2023
                       </div><br>
-                      <div class="item-title">Event Date .</div><br>
+                      <div class="item-title" style="font-family: 'Protest Riot', sans-serif;">Event Date .</div><br>
             
                     </li>
             
@@ -736,27 +797,27 @@ ul.rb li .timestamp {
     <div class="body-text">
         <ul class="ull">
           <li>
-            <input type="checkbox" checked />
+            <input type="checkbox" checked style="width: 40px;"/>
             <div class="divi">L</div>
           </li>
           <li>
-            <input type="checkbox" checked />
+            <input type="checkbox" checked style="width: 40px;"/>
             <div class="divi">U</div>
           </li>
           <li>
-            <input type="checkbox" checked />
+            <input type="checkbox" checked style="width: 40px;"/>
             <div class="divi">N</div>
           </li>
           <li>
-            <input type="checkbox" checked />
+            <input type="checkbox" checked style="width: 40px;"/>
             <div class="divi">A</div>
           </li>
           <li>
-            <input type="checkbox" checked />
+            <input type="checkbox" checked style="width: 40px;"/>
             <div class="divi">R</div>
           </li>
           <li>
-            <input type="checkbox" checked />
+            <input type="checkbox" checked style=" width: 40px;"/>
             <div class="divi">A</div>
           </li>
         </ul>
