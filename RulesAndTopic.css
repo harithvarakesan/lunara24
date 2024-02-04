@@ -6,8 +6,8 @@
     height: 540px;
     width: 540px;
     position:relative;
-    top:140px;
-    left: 850px;
+    top:40px;
+    left: 380px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,18 @@ button{
 }@media(max-width:720px){
     .RulesAndTopic{
         position: relative;
-        top:550px;
-        
+        top:650px;
+        left:0px;
+        background-color:rgba(0, 0, 0, 0);
+
+    }
+    .RulesAndTopic h2{
+        color: black;
+    }
+    .RulesAndTopic li {
+        color: black;
+    }
+    .RulesAndTopic{
+        columns: black;
     }
 }
