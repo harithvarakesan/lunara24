@@ -350,7 +350,7 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item .nav-link:hover {
-  background-color: rgba(203, 4, 238, 0.379);
+  background-image: -webkit-linear-gradient( 0deg, rgb(20,29,162) 0%, rgb(155,92,246) 100%);
   border: 2px solid white;
   border-radius: 10px;
   transform: scale(1.1);
@@ -4222,7 +4222,7 @@ h6 {
 
 /*============== footer-area css ===============*/
 .footer-area {
-  background: #04091e;
+  background-image: -webkit-linear-gradient( 0deg, rgb(20,29,162) 0%, rgb(155,92,246) 100%);
 }
 
 .single-footer-widget p {
