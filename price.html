@@ -112,27 +112,30 @@ body{
   border-radius: 5px;
 }
 /*Rainbow Styling Ends*/
+
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   color: black;
   text-align: center;
 }
 
 .card {
   flex-basis: calc(33.33% - 20px); /* Adjust the width based on your preference */
-  background-color: #f0f0f0;
+  background-color: #e7d4fa;
+  margin: 20px;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.467) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.495) 0px 18px 36px -18px inset;
 }
 .card:hover{
     transform: scale(1.1);
     transition-duration: 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .card h2 {
@@ -140,24 +143,30 @@ body{
   font-size: 24px;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 768px) {
-  .card {
-    flex-basis: calc(100% - 20px);
-  }
-}
 .card1 {
   flex-basis: calc(25% - 20px); /* Adjust the width based on your preference */
-  background-color: #f0f0f0;
+  background-color: #d7d5f5;
+  margin: 10px;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .card1:hover{
     transform: scale(1.1);
     transition-duration: 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    flex-basis: calc(100% - 20px);
+  }
+  .card1 {
+    flex-basis: calc(50% - 20px);
+  }
 }
 
 .event-details {
@@ -184,9 +193,10 @@ body{
 }
 
 .prize p {
-  font-size: 18px;
-  color: #777;
+  font-size: 20px;
+  color: #8c0707;
   margin-bottom: 20px;
+  font-weight: bolder;
 }
 
 .registration-btn {
@@ -197,10 +207,16 @@ body{
   padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  margin: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
 }
 
 .registration-btn:hover {
   background-color: #0056b3;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
 }
 b{
     color: black;
@@ -267,20 +283,14 @@ b{
 
     <!-- Marquee area -->
 
-    <div class="container">
-        <marquee behavior="" direction="left" scrollamount="5" class="register">
-           <!-- <div class="hero_txt d-flex align-items-center">
-                Click here for Registeration(Read Requirements before registering) 👉 &nbsp;&nbsp;   <a href="https://docs.google.com/forms/d/e/1FAIpQLScM8PjYUxlKCm8dLqJ_WetivsBdciskCcy-0sPW446A13LcVg/viewform" target="_blank" ><button class="button-30" role="button">Register</button></a>
-            </div> -->
-        </marquee>
-    </div>
 
     
 
     <!--================Price Area =================-->
     <section class="price_area">
         <div class="offers">
-            <h1 style="text-align: center;color: black;">COMBO OFFERS</h1>
+            <h1 style="text-align: center;color: black;margin-top: 50px;">COMBO OFFERS</h1>
+            <p style="color: red;">Note: You can choose one event from each Category in a combo</p>
             <div class="container">
                 <div class="card">
                     <h2>Combo 1</h2>
@@ -354,6 +364,7 @@ b{
                     <div class="prize">
                         <p>Prize: $1000</p>
                     </div>
+                    <a href="#" class="registration-btn">Details</a>
                     <a href="#" class="registration-btn">Register Now</a>
                 </div>
                 <div class="card1">
@@ -362,6 +373,7 @@ b{
                     <div class="prize">
                         <p>Prize: $1000</p>
                     </div>
+                    <a href="#" class="registration-btn">Details</a>
                     <a href="#" class="registration-btn">Register Now</a>
                 </div>
                 <div class="card1">
@@ -370,6 +382,7 @@ b{
                     <div class="prize">
                         <p>Prize: $1000</p>
                     </div>
+                    <a href="#" class="registration-btn">Details</a>
                     <a href="#" class="registration-btn">Register Now</a>
                 </div><div class="card1">
                     <h2>Combo 1</h2>
@@ -377,6 +390,7 @@ b{
                     <div class="prize">
                         <p>Prize: $1000</p>
                     </div>
+                    <a href="#" class="registration-btn">Details</a>
                     <a href="#" class="registration-btn">Register Now</a>
                 </div>
                 <div class="card1">
@@ -385,6 +399,7 @@ b{
                     <div class="prize">
                         <p>Prize: $1000</p>
                     </div>
+                    <a href="#" class="registration-btn">Details</a>
                     <a href="#" class="registration-btn">Register Now</a>
                 </div>
                 <div class="card1">
@@ -393,6 +408,7 @@ b{
                     <div class="prize">
                         <p>Prize: $1000</p>
                     </div>
+                    <a href="#" class="registration-btn">Details</a>
                     <a href="#" class="registration-btn">Register Now</a>
                 </div>
             </div>
@@ -404,6 +420,7 @@ b{
                     <div class="prize">
                         <p>Prize: $1000</p>
                     </div>
+                    <a href="#" class="registration-btn">Details</a>
                     <a href="#" class="registration-btn">Register Now</a>
                 </div>
                 <div class="card1">
@@ -412,6 +429,7 @@ b{
                     <div class="prize">
                         <p>Prize: $1000</p>
                     </div>
+                    <a href="#" class="registration-btn">Details</a>
                     <a href="#" class="registration-btn">Register Now</a>
                 </div>
                 <div class="card1">
@@ -420,6 +438,7 @@ b{
                     <div class="prize">
                         <p>Prize: $1000</p>
                     </div>
+                    <a href="#" class="registration-btn">Details</a>
                     <a href="#" class="registration-btn">Register Now</a>
                 </div><div class="card1">
                     <h2>Combo 1</h2>
@@ -435,6 +454,7 @@ b{
                     <div class="prize">
                         <p>Prize: $1000</p>
                     </div>
+                    <a href="#" class="registration-btn">Details</a>
                     <a href="#" class="registration-btn">Register Now</a>
                 </div>
                 <div class="card1">
@@ -443,21 +463,13 @@ b{
                     <div class="prize">
                         <p>Prize: $1000</p>
                     </div>
+                    <a href="#" class="registration-btn">Details</a>
                     <a href="#" class="registration-btn">Register Now</a>
                 </div>
             </div>
             
         </div>
-    </section><p style="text-align: center; font-size: 250%;">👇</p>
-    <!--================End Price Area =================-->
-    <div>
-        <div>
-           <center> <a href="https://docs.google.com/forms/d/e/1FAIpQLScM8PjYUxlKCm8dLqJ_WetivsBdciskCcy-0sPW446A13LcVg/viewform" target="_blank" ><button class="button-30" role="button" style="color: white; background:linear-gradient(45deg,#141da2,#9b5cf6); ">Non BIT Student</button></a>
-            <a href="" target="_blank" ><button class="button-30" role="button" style="color: white;background:linear-gradient(45deg,#141da2,#9b5cf6);">BIT Student</button></a>
-        </center> 
-        </div><br><br>
-    </div>
-
+    </section>
     <!--================ start footer Area  =================-->
     <footer class="footer-area p_120">
         <div class="container">
