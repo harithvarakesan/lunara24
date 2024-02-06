@@ -137,6 +137,12 @@ input[type="checkbox"] {
     inset 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width:1230px){
+  .tickets_btn a{
+    margin-left: -80px;
+  }
+}
+
 @media (max-width:650px){
   .divi{
     height: 50px;
@@ -240,7 +246,7 @@ input[type="checkbox"]:checked ~ div {
     top: 50%;  
     width: 24em;
     margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
+    
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);    
@@ -251,12 +257,44 @@ input[type="checkbox"]:checked ~ div {
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
+
+@media (max-width:768px){
+  .anim-typewriter{
+    animation: none;
+    width: 440px;
+  }
+}
+
+@media (max-width:460px){
+   .anim-typewriter{
+    font-size: 30px;
+    width: 370px;
+   }
+}
+
+@media (max-width:390px){
+   .anim-typewriter{
+    font-size: 25px;
+    width: 310px;
+   }
+}
+
+@media (max-width:330px){
+   .anim-typewriter{
+    font-size: 23px;
+    width: 290px;
+    padding-left: 5px;
+    padding-right: 0px;
+   }
+}
+
+
 @keyframes typewriter{
   from{width: 0;}
   to{width: 100%;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
+  from{border-right-color: transparent;}
   to{border-right-color: transparent;}
 }
 
@@ -591,6 +629,14 @@ ul.rb li .timestamp {
   }
 }
 
+.footer-area{
+  background-image: -webkit-linear-gradient( 0deg, rgb(20,29,162) 0%, rgb(155,92,246) 100%);
+  color: #fff;
+  font-family: 'Protest Riot', sans-serif;
+}
+
+
+
 
     </style>    
 </head>
@@ -652,7 +698,7 @@ ul.rb li .timestamp {
                             <li class="nav-item"><a class="nav-link" href="ack.html">Accommodation </a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item"><a href="price.html" class="tickets_btn" style="font-family: 'Protest Riot', sans-serif;">Register Now</a></li>
+                            <li class="nav-item"><a href="price.html" class="tickets_btn" style="font-family: 'Protest Riot', sans-serif; margin-left: 20px;">Register Now</a></li>
                         </ul>
                     </div>
                 </div>
@@ -664,9 +710,12 @@ ul.rb li .timestamp {
     <!--================Home Banner Area =================-->
     <section class="home_banner_area">
         <div class="banner_inner">
-            <div class="container">
+            <div class="container" style="
+            padding-left: 5px;
+            padding-right: 0px;
+        ">
 
-                <h1 class="black-lives-matter">LUNARA'24</h1><br><br><br>
+                <h1 class="black-lives-matter" style="padding-left: 10px;">LUNARA'24</h1><br><br><br>
 
 
                 <div class="label" style="width: 70%;">
@@ -699,7 +748,7 @@ ul.rb li .timestamp {
                 </div>
                 <div class="col-lg-6 offset-lg-1">
                     <div class="welcome_text">
-                        <h3 style="font-size: 70px; font-family: 'Protest Riot', sans-serif;" >Welcome to the event</h3>
+                        <h3 style="font-size: 50px; font-family: 'Protest Riot', sans-serif;" >Welcome to the event</h3>
                         <p class="text-justify " style="font-size: 20px;">
                           LUNARA'24 (Free the drive of life to explore) is a National Level Event which is one of the proud venture of our Department of Computer Science & Engineering. We aim at bringing out the technological and inventive skills from all the students irrespective of domains all over the country. It is our immense pleasure to invite each and every unique mind with magnificent ideas longing for a stage to exhibit out.
                         </p>
@@ -778,19 +827,19 @@ ul.rb li .timestamp {
         
             <div class="body-timer">
             <div class="container-timer">
-              <h1 id="headline">Event Starts In</h1>
+              <h1 id="headline" style="font-family: 'Protest Riot', sans-serif;">Event Starts In</h1>
               <div id="countdown">
                 <ul>
-                  <li class="timer-li"><span id="days"></span><br>days</li>
-                  <li class="timer-li"><span id="hours"></span><br>Hours</li>
-                  <li class="timer-li"><span id="minutes"></span><br>Minutes</li>
-                  <li class="timer-li"><span id="seconds"></span><br>Seconds</li>
+                  <li class="timer-li" style="font-family: 'Protest Riot', sans-serif;"><span id="days"></span><br>days</li>
+                  <li class="timer-li" style="font-family: 'Protest Riot', sans-serif;"><span id="hours"></span><br>Hours</li>
+                  <li class="timer-li" style="font-family: 'Protest Riot', sans-serif;"><span id="minutes"></span><br>Minutes</li>
+                  <li class="timer-li" style="font-family: 'Protest Riot', sans-serif;"><span id="seconds"></span><br>Seconds</li>
                 </ul>
               </div>
             </div>
         </div><br>
 
-        <center><a href="price.html" class="tickets_btn">Register Now</a></center>
+        <center><a href="price.html" class="tickets_btn" style="font-family: 'Protest Riot', sans-serif;">Register Now</a></center>
 
     </section><br><br>
 
@@ -798,27 +847,27 @@ ul.rb li .timestamp {
         <ul class="ull">
           <li>
             <input type="checkbox" checked style="width: 40px;"/>
-            <div class="divi">L</div>
+            <div class="divi" style="font-family: 'Protest Riot', sans-serif;">L</div>
           </li>
           <li>
             <input type="checkbox" checked style="width: 40px;"/>
-            <div class="divi">U</div>
+            <div class="divi" style="font-family: 'Protest Riot', sans-serif;">U</div>
           </li>
           <li>
             <input type="checkbox" checked style="width: 40px;"/>
-            <div class="divi">N</div>
+            <div class="divi" style="font-family: 'Protest Riot', sans-serif;">N</div>
           </li>
           <li>
             <input type="checkbox" checked style="width: 40px;"/>
-            <div class="divi">A</div>
+            <div class="divi" style="font-family: 'Protest Riot', sans-serif;">A</div>
           </li>
           <li>
             <input type="checkbox" checked style="width: 40px;"/>
-            <div class="divi">R</div>
+            <div class="divi" style="font-family: 'Protest Riot', sans-serif;">R</div>
           </li>
           <li>
             <input type="checkbox" checked style=" width: 40px;"/>
-            <div class="divi">A</div>
+            <div class="divi" style="font-family: 'Protest Riot', sans-serif;">A</div>
           </li>
         </ul>
         </div><br><br>
@@ -839,16 +888,16 @@ ul.rb li .timestamp {
                             <i class="lnr lnr-home"></i>
                         </div>
                         <div class="media-body">
-                            <h4>Erode, Tamil Nadu</h4>
-                            <p>Sathyamangalam</p>
+                            <h4 style="font-family: 'Protest Riot', sans-serif;">Erode, Tamil Nadu</h4>
+                            <p style="font-family: 'Protest Riot', sans-serif;">Sathyamangalam</p>
                         </div>
                     </div>
                     <div class="media">
                         <div class="d-flex">
                             <i class="lnr lnr-clock"></i>
                         </div>
-                        <div class="media-body">
-                            <h4>Event on</h4>
+                        <div class="media-body" style="font-family: 'Protest Riot', sans-serif;">
+                            <h4 style="font-family: 'Protest Riot', sans-serif;">Event on</h4>
                             <p>12<sup>th</sup> and 13<sup>th</sup> April 2024</p>
                         </div>
                     </div>
@@ -856,8 +905,8 @@ ul.rb li .timestamp {
                         <div class="d-flex">
                             <i class="lnr lnr-envelope"></i>
                         </div>
-                        <div class="media-body">
-                            <h4>lunara24@bitsathy.ac.in</h4>
+                        <div class="media-body" style="font-family: 'Protest Riot', sans-serif;">
+                            <h4 style="font-family: 'Protest Riot', sans-serif;">lunara24@bitsathy.ac.in</h4>
                             <p>Send us your query anytime!</p>
                         </div>
                     </div>
@@ -873,18 +922,18 @@ ul.rb li .timestamp {
             <div class="row">
                 <div class="col-lg-3  col-md-6 col-sm-6">
                     <div class="single-footer-widget tp_widgets">
-                        <h6 class="footer_title">Quick Links</h6>
-                        <ul class="list quick-link">
-                            <li><a href="about-us.html">About</a></li>
+                        <h6 class="footer_title" style="font-family: 'Protest Riot', sans-serif;">Quick Links</h6>
+                        <ul class="list quick-link" >
+                            <li ><a href="about-us.html" style="font-family: 'Protest Riot', sans-serif;">About</a></li>
                            
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact.html" style="font-family: 'Protest Riot', sans-serif;">Contact</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-6">
                     <div class="single-footer-widget news_widgets">
-                        <h6 class="footer_title">About</h6>
-                        <p>
+                        <h6 class="footer_title" style="font-family: 'Protest Riot', sans-serif;">About</h6>
+                        <p style="color: #fff;">
                           LUNARA'24 (Free the drive of life to explore) is a National Level Event which is one of the proud venture of our Department of Computer Science & Engineering. We aim at bringing out the technological and inventive skills from all the students irrespective of domains all over the country. It is our immense pleasure to invite each and every unique mind with magnificent ideas longing for a stage to exhibit out.
 
                             <section>
@@ -899,10 +948,10 @@ ul.rb li .timestamp {
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 offset-lg-1">
                     <div class="single-footer-widget instafeed">
-                        <h6 class="footer_title">For queries and support contact</h6>
+                        <h6 class="footer_title" style="font-family: 'Protest Riot', sans-serif;">For queries and support contact</h6>
                         <ul class="list instafeed">
                             <li>
-                                <h3>Event Committee</h3>
+                                <h3 style="font-family: 'Protest Riot', sans-serif;">Event Committee</h3>
                             </li>
                             <li>Organizing Secretary</li>
                             <li>Department of CSE</li>
@@ -923,7 +972,7 @@ ul.rb li .timestamp {
                         document.write(new Date().getFullYear());
 
                     </script>
-                    All rights reserved | <a href="https://www.bitsathy.ac.in" target="_blank">BIT</a>
+                    All rights reserved | <a href="https://www.bitsathy.ac.in" target="_blank" style="color: #fff;">BIT</a>
                 </p>
 
                 
