@@ -54,4 +54,7 @@ button{
     .RulesAndTopic{
         columns: black;
     }
+    .RulesAndTopic{
+        color: white;
+    }
 }
