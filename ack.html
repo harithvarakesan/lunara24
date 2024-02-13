@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACCOMMODATION</title>
+    <link rel="stylesheet" href="css/css-bootstrap.css">
+    <link rel="stylesheet" href="css/linericon-style.css">
+    <link rel="stylesheet" href="css/css-font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl-carousel-owl.carousel.min.css">
+    <link rel="stylesheet" href="css/lightbox-simpleLightbox.css">
+    <link rel="stylesheet" href="css/css-nice-select.css">
+    <link rel="stylesheet" href="css/animate-css-animate.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/css-style.css">
+    <link rel="stylesheet" href="css/css-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/9562-js-bootstrap.min.js"></script>
+
     <style>
       body {
         margin: 0;
@@ -18,13 +32,13 @@
         min-height: 100vh;
       }
 
-      .header {
+      /* .header {
         position: fixed;
         top: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.5);
         z-index: 1000;
-      }
+      } */
 
       ul {
         list-style: none;
@@ -126,35 +140,40 @@
     </style>
   </head>
   <body>
-    <div class="header">
-      <ul>
-        <li>
-          <img src="lunara.png" style="height: 150px" width="70%;" />
-        </li>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="TECHNICAL.html">Technical</a>
-        </li>
-        <li>
-          <a href="NON-TECHNICAL.html">Non-Technical</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-        <li>
-          <a
-            href="price.html"
-            style="
-              background: linear-gradient(45deg, #141da2, #9b5cf6);
-              padding: 10px 10px;
-            "
-            >Register</a
-          >
-        </li>
-      </ul>
-    </div>
+    <header class="header_area">
+      <div class="main_menu">
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <img style="margin-top: 1%; width:300px; height: 90px;" src="images/headlogo.png">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                      <ul class="nav navbar-nav menu_nav ml-auto">
+                          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                          </li><li class="nav-item submenu dropdown">
+                              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Event Details</a>
+                              <ul class="dropdown-menu">
+                                  <li class="nav-item"><a class="nav-link" href="TECHNICAL.html">Technical</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="NON-TECHNICAL.html">Non Technical </a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+                          <li class="nav-item"><a class="nav-link" href="ack.html">Accommodation </a></li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                          <li class="nav-item"><a href="price.html" class="tickets_btn">Register Now</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  </header>
     <div class="card">
       <!-- <img src="" alt="Hostel Image"> -->
       <div class="details">
