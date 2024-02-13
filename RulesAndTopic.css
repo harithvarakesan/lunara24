@@ -23,6 +23,9 @@
     color:white;
     display:flex;
 }
+.RulesAndTopic h3{
+    color: white;
+}
 .RulesAndTopic strong{
     font-size: 20px;
     color: white;
@@ -45,7 +48,7 @@ button{
         background-color:rgb(255, 255, 255);
         
     }
-    .RulesAndTopic h2{
+    .RulesAndTopic h2,.RulesAndTopic h3{
         color: black;
     }
     .RulesAndTopic li {
@@ -55,6 +58,6 @@ button{
         columns: black;
     }
     .RulesAndTopic{
-        color: rgb(0, 0, 0);
+        color: white;
     }
 }

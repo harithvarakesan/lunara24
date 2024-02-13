@@ -1,4 +1,5 @@
 @import url(//db.onlinewebfonts.com/c/8cdbb48678e4418f22a2f507c2b975bd?family=Blanka);
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 body
 {
 	margin: 0;
@@ -88,7 +89,7 @@ section
 {
 	font-size: 6em;
 	animation-delay: 1s;
-	font-family: "Blanka"; src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot"); src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg"); 
+	font-family: 'Kdam Thmor Pro', sans-serif; src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot"); src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg"); 
 }
 .bannerText h3
 {

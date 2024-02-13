@@ -125,6 +125,7 @@ body{
 .card {
   flex-basis: calc(33.33% - 20px); /* Adjust the width based on your preference */
   background-color: #e7d4fa;
+  height: 490px;
   margin: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -132,6 +133,7 @@ body{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   text-align: center;
+  position: relative;
   box-shadow: rgba(50, 50, 93, 0.467) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.495) 0px 18px 36px -18px inset;
 }
 .card:hover{
@@ -201,7 +203,7 @@ body{
   font-weight: bolder;
 }
 
-.registration-btn {
+.card .registration-btn {
   display: inline-block;
   background-color: #007bff;
   color: #fff;
@@ -211,9 +213,20 @@ body{
   transition: background-color 0.3s ease;
   margin: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
+  bottom: 20px;
+  width: 87%;
 }
-
+.card1 .registration-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
 .registration-btn:hover {
   background-color: #0056b3;
   color: white;
@@ -301,61 +314,62 @@ b{
                         <div class="events">
                         <h3>Technical Events:</h3>
                         <ul>
-                            <li><b>Category 1: </b>Event 1/Event 2/Event 3</li>
-                            <li><b>Category 2: </b>Event 1/Event 2/Event 3</li>
+                            <li><b>Category 1: </b>Stellar Scripts/Inventive Insights/<br>Code Nova/Cosmic Webcraft</li>
+                            
                         </ul>
                         <h3>Non-Technical Events:</h3>
                         <ul>
-                            <li><b>Category 3: </b>Event 1/Event 2/Event 3</li>
+                            <li><b>Category 2: </b>Fiesta Fables/Clash Of Concepts/<br>Galatic Riddles</li>
+                            <li><b>Category 3: </b>Fiesta Fables/Clash Of Concepts/<br>Galatic Riddles</li>
                         </ul>
                         </div>
                     </div>
                     <div class="prize">
-                        <p>Prize: $1000</p>
+                        <p>Prize: $350</p>
                     </div>
                     <a href="#" class="registration-btn">Register Now</a>
                 </div>
-                <div class="card">
-                    <h2>Combo 1</h2>
-                    <p>1 Techinal + 2 Non-Technical</p>
+                <div class="card" >
+                    <h2>Combo 2</h2>
+                    <p>2 Techinal + 1 Non-Technical</p><br>
                     <div class="event-details">
                         <div class="events">
                         <h3>Technical Events:</h3>
                         <ul>
-                            <li><b>Category 1: </b>Event 1/Event 2/Event 3</li>
-                            <li><b>Category 2: </b>Event 1/Event 2/Event 3</li>
+                            <li><b>Category 1: </b>Stellar Scripts/Inventive Insights</li>
+                            <li><b>Category 2: </b>Cosmic Webcraft/Code Nova</li>
                         </ul>
                         <h3>Non-Technical Events:</h3>
                         <ul>
-                            <li><b>Category 3: </b>Event 1/Event 2/Event 3</li>
+                            <li><b>Category 3: </b>Galatic Riddles</li><br><br>
                         </ul>
                         </div>
                     </div>
                     <div class="prize">
-                        <p>Prize: $1000</p>
+                        <p>Prize: $450</p>
                     </div>
-                    <a href="#" class="registration-btn">Register Now</a>
+                    <a href="#" class="registration-btn" style="position: absolute;">Register Now</a>
                 </div>
                 <div class="card">
-                    <h2>Combo 1</h2>
-                    <p>1 Techinal + 2 Non-Technical</p>
+                    <h2>Combo 3</h2>
+                    <p>2 Techinal + 1 Non-Technical</p><br>
                     <div class="event-details">
                         <div class="events">
                         <h3>Technical Events:</h3>
                         <ul>
-                            <li><b>Category 1: </b>Event 1/Event 2/Event 3</li>
-                            <li><b>Category 2: </b>Event 1/Event 2/Event 3</li>
+                            <li><b>Category 1: </b>Stellar Scripts</li>
+                            <li><b>Category 2: </b>Cosmic Webcraft/Code Nova</li>
                         </ul>
                         <h3>Non-Technical Events:</h3>
                         <ul>
-                            <li><b>Category 3: </b>Event 1/Event 2/Event 3</li>
+                            <li><b>Category 3: </b>Fiesta Fables/Clash Of Concepts</li><br><br>
                         </ul>
                         </div>
                     </div>
                     <div class="prize">
-                        <p>Prize: $1000</p>
+                        <p>Prize: $450</p>
                     </div>
-                    <a href="#" class="registration-btn">Register Now</a>
+                    <a href="#" class="registration-btn" style="position: absolute;">Register Now</a>
                 </div>
             </div>
             <h2> TECHNICAL EVENTS</h2>
@@ -435,7 +449,7 @@ b{
                     <a href="#" class="registration-btn">Register Now</a>
                 </div>
                 <div class="card1">
-                    <h2>Clash Of Concepts<br>ODYSSEY</h2>
+                    <h2>Clash Of Concepts</h2>
                     <p>DEBATE</p>
                     <div class="prize">
                         <p>Prize: $1000</p>
