@@ -15,75 +15,83 @@
     />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="dis_style.css" />
-     <link rel="stylesheet" href="RulesAndTopic.css">
-    
+    <link rel="stylesheet" href="RulesAndTopic.css" />
   </head>
   <body>
     <div class="open">
       <div class="layer"></div>
-      
     </div>
-    <section id="blur">      
+    <section id="blur">
       <div class="bannerText">
-        <h2>LUNARA '24</h2><br>
+        <h2>LUNARA '24</h2>
+        <br />
         <h3>STELLAR SCRIPTS (Paper Presentation)</h3>
-        <p style="font-size: 20px;">Join us for a captivating paper presentation event where scholars showcase their research
-findings and insights in concise, engaging presentations, fostering intellectual exchange
-and discovery
+        <p style="font-size: 20px">
+          Join us for a captivating paper presentation event where scholars
+          showcase their research findings and insights in concise, engaging
+          presentations, fostering intellectual exchange and discovery
         </p>
-        <br>
-        <button>Register</button>
+        <br />
+        <button class="button-16">Register</button>
       </div>
-       <div class="RulesAndTopic">
+      <div class="RulesAndTopic">
         <div>
           <h2>Paper Presentation</h2>
-            <strong>Rules:</strong>
-        <ul>
-              <li><p>Team size: 1 - 4</p></li>
-              <li><p>PPT slides: 7 - 10 slides </p></li>
-              <li><p>Format: IEEE format is mandatory (follow given template)</p></li>
-          <li><p>Duration: 5 mins - Presentation</p></li>
-          <li><p>Duration: 2 mins - Q/A session</p></li>
-            </ul>
-            
+          <strong>Rules:</strong>
+          <ul>
+            <li><p>Team size: 1 - 4</p></li>
+            <li><p>PPT slides: 7 - 10 slides</p></li>
+            <li>
+              <p>Format: IEEE format is mandatory (follow given template)</p>
+            </li>
+            <li><p>Duration: 5 mins - Presentation</p></li>
+            <li><p>Duration: 2 mins - Q/A session</p></li>
+          </ul>
 
-            <br>
-            <strong>Topics:</strong>
-            <ul>
-              <li><p>• Artificial Intelligence and Machine Learning
-</p></li>
-              <li><p>•Cybersecurity Threats and Mitigation Strategies</p></li>
-              <li><p>• Quantum Computing</p></li>
-              <li><p>•Data Science and Big Data Analytics</p></li>
-              <li><p>• Augmented Reality and Virtual Reality: Recent Advancements and
-Applications</p></li>
-              <li><p>•Ethical and Social Implications of Technology</p></li>
-            </ul>
-            
-            <button class="button-16" role="button"  style="padding: 2px;"><a  style="text-decoration: none;" href="format.pdf">Reference</a></button>
-            <button class="button-16"  style="margin-left: 10px;"  role="button"><a style=" text-decoration: none;" href="#" onclick="toggle()">Close</a></button>
-            </div>
+          <br />
+          <strong>Topics:</strong>
+          <ul>
+            <li><p>• Artificial Intelligence and Machine Learning</p></li>
+            <li><p>•Cybersecurity Threats and Mitigation Strategies</p></li>
+            <li><p>• Quantum Computing</p></li>
+            <li><p>•Data Science and Big Data Analytics</p></li>
+            <li>
+              <p>• Augmented Reality and Virtual Reality</p>
+            </li>
+            <li><p>•Ethical and Social Implications of Technology</p></li>
+          </ul>
+
+          <button class="button-16" role="button" style="padding: 2px">
+            <a style="text-decoration: none" href="format.pdf">Reference</a>
+          </button>
+          <button class="button-16" style="margin-left: 10px" role="button">
+            <a
+              href="TECHNICAL.html"
+              style="text-decoration: none"
+              href="#"
+              onclick="toggle()"
+              >Close</a
+            >
+          </button>
         </div>
-      <div class="element1"></div>
-      <div class="element2"></div>
-      
-      
+      </div>
     </section>
 
-    <header style="position: absolute;
-    top: 0;">
+    <header style="position: absolute; top: 0">
       <nav>
-        <a href="#home" id="logo"><img src="headlogo.png" style="width:150px;"></a>
+        <a href="#home" id="logo"
+          ><img src="headlogo.png" style="width: 150px"
+        /></a>
         <i class="fas fa-bars" id="ham-menu"></i>
         <ul id="nav-bar">
           <li>
-            <a href="index.html" >Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="TECHNICAL.html" >Technical</a>
+            <a href="TECHNICAL.html">Technical</a>
           </li>
           <li>
-            <a href="NON-TECHNICAL.html" >Non-Technical</a>
+            <a href="NON-TECHNICAL.html">Non-Technical</a>
           </li>
           <li>
             <a href="ack.html">Accommodation</a>
@@ -92,12 +100,19 @@ Applications</p></li>
             <a href="contact.html">Contact</a>
           </li>
           <li>
-            <a href="price.html" style="background:linear-gradient(45deg,#141da2,#9b5cf6);padding: 10px 10px;">Register</a>
+            <a
+              href="price.html"
+              style="
+                background: linear-gradient(45deg, #141da2, #9b5cf6);
+                padding: 10px 10px;
+              "
+              >Register</a
+            >
           </li>
         </ul>
       </nav>
     </header>
-    
+
     <!-- <div id="popup">
             <h2>Paper Presentation</h2>
             <strong>Rules:</strong>
@@ -129,13 +144,12 @@ Applications</p></li>
 
         </div><br> -->
     <script>
-      function toggle(){
-              var blur = document.getElementById('blur');
-              blur.classList.toggle('active');
-              var blur = document.getElementById('blur');
-              popup.classList.toggle('active');
-            }
-
+      function toggle() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var blur = document.getElementById("blur");
+        popup.classList.toggle("active");
+      }
     </script>
 
     <script src="dis_script.js"></script>

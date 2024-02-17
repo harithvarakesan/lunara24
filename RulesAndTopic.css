@@ -4,7 +4,7 @@
 .RulesAndTopic{  
     background-color: rgba(189, 215, 221, 0.352);
     height: 540px;
-    width: 540px;
+    width: 550px;
     position:relative;
     top:40px;
     left: 380px;
@@ -13,6 +13,7 @@
     align-items: center;
     overflow: scroll;
     overflow-x: hidden;
+    
     border-radius: 20px;
 }
 .RulesAndTopic>p{
