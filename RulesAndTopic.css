@@ -61,4 +61,7 @@ button{
     .RulesAndTopic{
         color: rgb(0, 0, 0);
     }
+    .RulesAndTopic strong{
+        color: black;
+    }
 }
