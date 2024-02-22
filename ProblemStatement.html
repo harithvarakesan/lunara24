@@ -4,16 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hackathon Problem Statements</title>
+    <link rel="stylesheet" href="css/css-bootstrap.css">
+    <link rel="stylesheet" href="css/linericon-style.css">
+    <link rel="stylesheet" href="css/css-font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl-carousel-owl.carousel.min.css">
+    <link rel="stylesheet" href="css/lightbox-simpleLightbox.css">
+    <link rel="stylesheet" href="css/css-nice-select.css">
+    <link rel="stylesheet" href="css/animate-css-animate.css">
+    <!-- main css -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Monoton&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Koulen&family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css-style.css">
+    <link rel="stylesheet" href="css/css-responsive.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/9562-js-bootstrap.min.js"></script>
+    
+    
     <style>
       /* Modern and attractive styling */
       body {
         font-family: "Roboto", sans-serif;
         margin: 0;
+        margin-top: 120px;
         padding: 0;
         background-image: url(./images/images/7270387.gif);
       }
 
-      .container {
+      .container1 {
         max-width: 820px;
         margin: 25px auto;
         padding: 25px;
@@ -22,76 +40,76 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
-      h1 {
+      .container1 h1 {
         text-align: center;
         color: #333;
         margin-bottom: 20px;
       }
 
-      p {
+      .container1 p {
         text-align: center;
         color: #666;
       }
 
-      #domain-container {
+      .container1 #domain-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 20px;
         justify-content: center;
       }
 
-      .domain-icon {
+      .container1 .domain-icon {
         width: 120px;
         height: 120px;
         cursor: pointer;
         transition: transform 0.3s ease;
       }
 
-      .domain-icon:hover {
+      .container1 .domain-icon:hover {
         transform: scale(1.1);
       }
 
-      #problem-details {
+      .container1 #problem-details {
         margin-top: 10px;
         padding: 19px;
         background-color: #f9f9f9;
         border-radius: 8px;
       }
 
-      ul {
+      .container1 ul {
         list-style-type: none;
         padding: 0;
       }
 
-      li {
+      .container1 li {
         margin-bottom: 10px;
         color: #555;
       }
 
       /* Dropdown styling */
-      .dropdown-container {
+      .container1 .dropdown-container {
         text-align: center;
         margin-top: 30px;
       }
 
-      .dropdown {
+      .container1 .dropdown {
         margin-bottom: 10px;
         background-color: #f9f9f9;
         border-radius: 8px;
         padding: 15px;
       }
 
-      .dropdown-title {
+      .container1 .dropdown-title {
         cursor: pointer;
         color: #333;
         transition: color 0.3s ease;
       }
 
-      .dropdown-title:hover {
+      .container1 .dropdown-title:hover {
         color: #007bff;
       }
 
-      .dropdown-content {
+      .container1 .dropdown-content {
         display: none;
         background-color: #f9f9f9;
         width: 96%; /* Full width */
@@ -103,7 +121,7 @@
         margin-top: 28px;
       }
 
-      .dropdown-content a {
+      .container1 .dropdown-content a {
         display: block;
         padding: 5px 0;
         text-decoration: none;
@@ -111,27 +129,61 @@
         transition: background-color 0.3s ease;
       }
 
-      .dropdown-content a:hover {
+      .container1 .dropdown-content a:hover {
         background-color: #ddd;
       }
 
-      .dropdown.active .dropdown-content {
+      .container1 .dropdown.active .dropdown-content {
         display: block;
       }
 
-      .dropdown-icon {
+      .container1 .dropdown-icon {
         float: right;
         cursor: pointer;
         transition: transform 0.3s ease;
       }
 
-      .dropdown-icon:hover {
+      .container1 .dropdown-icon:hover {
         transform: rotate(90deg);
       }
     </style>
   </head>
   <body>
-    <div class="container">
+    <header class="header_area">
+      <div class="main_menu">
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container">
+                  <img style="margin-top: 1%;" src="images/headlogo.png">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                      <ul class="nav navbar-nav menu_nav ml-auto">
+                          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                          </li><li class="nav-item submenu dropdown ">
+                              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Event Details</a>
+                              <ul class="dropdown-menu">
+                                  <li class="nav-item"><a class="nav-link" href="TECHNICAL.html">Technical</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="NON-TECHNICAL.html">Non Technical </a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                          <li class="nav-item"><a class="nav-link" href="ack.html">Accommodation </a></li>
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                          <li class="nav-item active"><a href="price.html" class="tickets_btn">Register Now</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  </header>    
+  <!--================Header Menu Area =================-->
+
+    <div class="container1">
       <h1>Hackathon Problem Statements</h1>
       <p>Select a domain to view problem statements:</p>
       <div id="domain-container" style="text-align: center">
