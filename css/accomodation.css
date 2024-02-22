@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    background: url('../images/images/LUNARA\ GIF.gif');
+    background: linear-gradient(rgba(0, 0, 0, 0.284),black),url('../images/images/LUNARA\ GIF.gif');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -11,7 +11,7 @@ body{
     left: 50%;
     background-color: rgba(5, 99, 181, 0.464);
     color: white;
-    border-radius: 20px;
+    border-radius: 50px;
     width: 60%;
 }
 .details img{
