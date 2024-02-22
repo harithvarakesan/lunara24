@@ -76,6 +76,9 @@
 
       .dropdown {
         margin-bottom: 10px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        padding: 15px;
       }
 
       .dropdown-title {
@@ -91,12 +94,13 @@
       .dropdown-content {
         display: none;
         background-color: #f9f9f9;
-        width: 100%; /* Full width */
+        width: 96%; /* Full width */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         z-index: 1;
         border-radius: 8px;
         padding: 10px;
         margin-top: 5px;
+        margin-top: 28px;
       }
 
       .dropdown-content a {
@@ -167,9 +171,9 @@
       <div id="problem-details">
         <!-- Problem details will be displayed here -->
       </div>
+      <h1>Frequently Asked Questions</h1>
       <div class="dropdown-container">
         <div class="dropdown">
-          <h1>Frequently Asked Questions</h1>
           <div class="dropdown-title" onclick="toggleDropdown(this)">
             What's Hack-A-Thon?
             <span class="dropdown-icon">&#9654;</span>
@@ -178,6 +182,51 @@
             <p style="color: rgb(27, 32, 34)">
               Hack-A-Thon is an offline 24-hour long hackathon where you code in
               a competitive fashion. You can participate alone or in a team.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-title" onclick="toggleDropdown(this)">
+            What's the minimum and maximum team size?
+            <span class="dropdown-icon">&#9654;</span>
+          </div>
+          <div class="dropdown-content">
+            <p style="color: rgb(27, 32, 34)">
+              A team could comprise 2 to 4 members.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-title" onclick="toggleDropdown(this)">
+            How do I submit my project?
+            <span class="dropdown-icon">&#9654;</span>
+          </div>
+          <div class="dropdown-content">
+            <p style="color: rgb(27, 32, 34)">
+              Submit your project in the github repository.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-title" onclick="toggleDropdown(this)">
+            What does the judging criteria look like?
+            <span class="dropdown-icon">&#9654;</span>
+          </div>
+          <div class="dropdown-content">
+            <p style="color: rgb(27, 32, 34)">
+              Evaluation criteria includes presentation, documentation, and
+              originality.
+            </p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-title" onclick="toggleDropdown(this)">
+            Who can I contact if I have questions?
+            <span class="dropdown-icon">&#9654;</span>
+          </div>
+          <div class="dropdown-content">
+            <p style="color: rgb(27, 32, 34)">
+              Check out our Contact us section.
             </p>
           </div>
         </div>
