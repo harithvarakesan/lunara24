@@ -13,8 +13,6 @@
     align-items: center;
     overflow: scroll;
     overflow-x: hidden;
-    border-radius: 10px;
-    border: 10px solid rgba(5, 78, 73, 0.3)
    
 }
 .RulesAndTopic>p{
@@ -48,6 +46,8 @@ button{
         top:650px;
         left:0px;
         background-color:rgb(255, 255, 255);
+        border-radius: 10px;
+        border: 10px solid rgba(5, 78, 73, 0.3)
         
     }
     .RulesAndTopic h2,.RulesAndTopic h3{
