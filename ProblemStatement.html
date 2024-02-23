@@ -190,7 +190,7 @@
         <img
           src="./images/images/ps-1.avif"
           style="border-radius: 10px"
-          alt="Domain 1"
+          alt="AI\ML"
           class="domain-icon"
           onclick="showDetails(1)"
         />
@@ -286,65 +286,64 @@
       </div>
     </div>
 
-    <script>
-      // Define problem statements for each domain
-      const problemStatements = {
-        1: [
-          "Problem Statement 1 for Domain 1",
-          "Problem Statement 2 for Domain 1",
-          "Problem Statement 3 for Domain 1",
-        ],
-        2: [
-          "Problem Statement 1 for Domain 2",
-          "Problem Statement 2 for Domain 2",
-          "Problem Statement 3 for Domain 2",
-        ],
-        3: [
-          "Problem Statement 1 for Domain 3",
-          "Problem Statement 2 for Domain 3",
-          "Problem Statement 3 for Domain 3",
-        ],
-        4: [
-          "Problem Statement 1 for Domain 4",
-          "Problem Statement 2 for Domain 4",
-          "Problem Statement 3 for Domain 4",
-        ],
-        5: [
-          "Problem Statement 1 for Domain 5",
-          "Problem Statement 2 for Domain 5",
-          "Problem Statement 3 for Domain 5",
-        ],
-      };
-
-      // Function to toggle dropdown visibility
-      function toggleDropdown(element) {
-        const dropdown = element.parentNode;
-        dropdown.classList.toggle("active");
+   <script>
+  // Define problem statements with titles and brief contents for each domain
+  const problemStatements = {
+    1: [
+      // Social Impact and Community Development
+      {
+        title: "Problem Statement 1",
+        brief: "."
+      },
+      {
+        title: "Problem Statement 2",
+        brief: "Disparities in healthcare access and outcomes based on socio-economic factors."
+      },
+      {
+        title: "Problem Statement 3",
+        brief: "Lack of awareness and sustainable practices in communities leading to environmental degradation."
       }
+    ],
+    // Define problem statements for other domains similarly
+    // ...
+  };
 
-      // Function to display problem statements for a selected domain
-      function showDetails(domainId) {
-        const detailsContainer = document.getElementById("problem-details");
-        detailsContainer.innerHTML = ""; // Clear previous details
+  // Function to toggle dropdown visibility
+  function toggleDropdown(element) {
+    const dropdown = element.parentNode;
+    dropdown.classList.toggle("active");
+  }
 
-        const problemList = problemStatements[domainId];
-        if (problemList && problemList.length > 0) {
-          const heading = document.createElement("h3");
-          heading.textContent = `Domain ${domainId} Problem Statements`;
-          detailsContainer.appendChild(heading);
+  // Function to display problem statements for a selected domain
+  function showDetails(domainId) {
+    const detailsContainer = document.getElementById("problem-details");
+    detailsContainer.innerHTML = ""; // Clear previous details
 
-          const list = document.createElement("ul");
-          problemList.forEach((problem) => {
-            const listItem = document.createElement("li");
-            listItem.textContent = problem;
-            list.appendChild(listItem);
-          });
-          detailsContainer.appendChild(list);
-        } else {
-          detailsContainer.innerHTML =
-            "<p>No problem statements available for this domain.</p>";
-        }
-      }
-    </script>
+    const problemList = problemStatements[domainId];
+    if (problemList && problemList.length > 0) {
+      const heading = document.createElement("h3");
+      heading.textContent = `Domain ${domainId} Problem Statements`;
+      detailsContainer.appendChild(heading);
+
+      const list = document.createElement("ul");
+      problemList.forEach((problem) => {
+        const listItem = document.createElement("li");
+        const title = document.createElement("h4");
+        title.textContent = problem.title;
+        const brief = document.createElement("p");
+        brief.textContent = problem.brief;
+        listItem.appendChild(title);
+        listItem.appendChild(brief);
+        list.appendChild(listItem);
+      });
+      detailsContainer.appendChild(list);
+    } else {
+      detailsContainer.innerHTML =
+        "<p>No problem statements available for this domain.</p>";
+    }
+  }
+</script>
+
   </body>
 </html>
+
