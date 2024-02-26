@@ -72,4 +72,7 @@ button{
     .RulesAndTopic strong{
         color: black;
     }
+    .bannerText{
+        margin-right: 30px;
+    }
 }
