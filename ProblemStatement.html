@@ -28,21 +28,23 @@
         margin: 0;
         margin-top: 120px;
         padding: 0;
-        background-image: url(./images/images/7270387.gif);
-      }
+      background: linear-gradient(rgba(0, 0, 0, 0.284),black),url('../images/images/LUNARA\ GIF.gif');
+      background-size: cover;
+    background-attachment: fixed;
+    }
 
       .container1 {
         max-width: 820px;
         margin: 25px auto;
         padding: 25px;
-        background-color: #fff;
+    background-color: rgba(5, 99, 181, 0.464);
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
       .container1 h1 {
         text-align: center;
-        color: #333;
+        color: #ffffff;
         margin-bottom: 20px;
       }
 
@@ -146,6 +148,15 @@
       .container1 .dropdown-icon:hover {
         transform: rotate(90deg);
       }
+      .ps{
+        background-color: rgba(255, 255, 255, 0.208);
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .ps p{
+        font-weight: bold;
+        text-align: left;
+      }
     </style>
   </head>
   <body>
@@ -185,44 +196,47 @@
 
     <div class="container1">
       <h1>Hackathon Problem Statements</h1>
-      <p>Select a domain to view problem statements:</p>
+      <div class="ps">
+      <p style="color: red;text-align: center;">Select a domain to view problem statements:</p>
       <div id="domain-container" style="text-align: center">
         <img
-          src="./images/images/ps-1.avif"
+          src="./images/socialimpact.jpg"
           style="border-radius: 10px"
           alt="AI\ML"
           class="domain-icon"
-          onclick="showDetails(1)"
+          onclick="showDetails('Social Impact')"
         />
         <img
-          src="./images/ps-2.png"
+          src="./images/IOT.jpg"
           alt="Domain 2"
           class="domain-icon"
-          onclick="showDetails(2)"
+          onclick="showDetails('IOT')"
         />
         <img
-          src="icon1.png"
+          src="./images/education-removebg-preview.png"
           alt="Domain 3"
           class="domain-icon"
-          onclick="showDetails(3)"
+          style="background-color: white;"
+          onclick="showDetails('Education and Learning')"
         />
         <img
-          src="icon2.png"
+          src="./images/images/ps-1.avif"
           alt="Domain 4"
           class="domain-icon"
-          onclick="showDetails(4)"
+          onclick="showDetails('Artificial Intelligence and Machine Learning')"
         />
         <img
-          src="icon1.png"
+          src="./images/images1.jpg"
           alt="Domain 5"
           class="domain-icon"
-          onclick="showDetails(5)"
+          onclick="showDetails('Cyber Security')"
         />
         <!-- Add more domain icons as needed -->
       </div>
       <div id="problem-details">
         <!-- Problem details will be displayed here -->
       </div>
+    </div>
       <h1>Frequently Asked Questions</h1>
       <div class="dropdown-container">
         <div class="dropdown">
@@ -289,23 +303,78 @@
    <script>
   // Define problem statements with titles and brief contents for each domain
   const problemStatements = {
-    1: [
+    'Social Impact': [
       // Social Impact and Community Development
       {
         title: "Problem Statement 1",
-        brief: "."
+        brief: " Disparities in healthcare access and outcomes based on socio-economic factors.Create a programs to increase healthcare accessibility and awareness in underserved communities."
       },
       {
         title: "Problem Statement 2",
-        brief: "Disparities in healthcare access and outcomes based on socio-economic factors."
+        brief: "High rates of unemployment among youth, particularly in economically disadvantaged areas.Establish a skill development programs or job placement initiatives to empower young people with employable skills."
       },
       {
         title: "Problem Statement 3",
-        brief: "Lack of awareness and sustainable practices in communities leading to environmental degradation."
+        brief: "Limited community engagement and empowerment in decision-making processes.provide Facilitate community forums, workshops, and initiatives to empower local residents and involve them in decision-making."
       }
     ],
-    // Define problem statements for other domains similarly
-    // ...
+    'IOT':[
+    {
+        title: "Problem Statement 1",
+        brief: "Design an IoT based wearable location tracker and chatbot.* The wearable product could be hand-band, necklace or a jacket which may be used to track the subject even in case of emergency situation such as theft or a professional loosing his car or environmental extreme. The product/device should be able to answer user query in different local languages/ dialects. The designed system should be smart enough to understand and answer queries from user who suffer change in instructions due to mood/tone/health condition."
+      },
+      {
+        title: "Problem Statement 2",
+        brief: "Waste Management:* Devise an innovative waste management strategy that minimizes waste generation, optimizes waste collection and disposal processes, and promotes recycling and sustainable practices."
+      },
+      {
+        title: "Problem Statement 3",
+        brief: "Develop an IoT enabled solution with Android application to give real-time parking space available on the Campus / City / Resident Societies.* Whenever a person wants to find a parking space on the campus, he has already registered to the application using his user id and password. When he finds for the parking space, the server will send a response with the available parking details, real-time mapped directions and real-time parking space to allocate parking according to the size of the vehicle. The application would be smart enough to identify whether the car is heading towards the same parking space or not. If not, the application would re-route the same car to another nearest available parking space."
+      }
+    ],
+    'Education and Learning':[
+    {
+        title: "Problem Statement 1",
+        brief: "Raise classroom Behavior issues in real-time:Develop a referral process platform that helps teachers to raise and escalate major behavior issues in the classroom in real-time The platform would work like a classroom management tool that will help teachers to share real_time information on their student’s classroom behavior with students,otherteachers,parents and administrators."
+      },
+      {
+        title: "Problem Statement 2",
+        brief: "Data-driven Decision Support for Educators: Create a data analytics tool that aggregates and analyzes student performance data, attendance records, and engagement metrics to provide actionable insights and recommendations for educators to personalize teaching strategies and interventions."
+      },
+      {
+        title: "Problem Statement 3",
+        brief: "Gamification in Education: Integrate gamified elements into educational activities and assessments to increase student engagement, motivation, and learning outcomes."
+      }
+    ],
+    'Artificial Intelligence and Machine Learning':[
+    {
+        title: "Problem Statement 1",
+        brief: "Fraud Detection System for Financial Transactions: Design a fraud detection system for financial transactions using anomaly detection algorithms to identify suspicious patterns and prevent fraudulent activities in real-time."
+      },
+      {
+        title: "Problem Statement 2",
+        brief: "Virtual Personal Assistant: Develop a virtual personal assistant powered by AI that can perform tasks such as scheduling appointments, setting reminders, and answering queries using natural language understanding."
+      },
+      {
+        title: "Problem Statement 3",
+        brief: "Art Generation: Create an AI system capable of generating original artworks or assisting artists in the creative process, leveraging techniques such as generative adversarial networks (GANs)."
+      }
+    ],
+    
+    'Cyber Security':[
+    {
+        title: "Problem Statement 1",
+        brief: "Fraud Detection System for Financial Transactions: Design a fraud detection system for financial transactions using anomaly detection algorithms to identify suspicious patterns and prevent fraudulent activities in real-time."
+      },
+      {
+        title: "Problem Statement 2",
+        brief: "Virtual Personal Assistant: Develop a virtual personal assistant powered by AI that can perform tasks such as scheduling appointments, setting reminders, and answering queries using natural language understanding."
+      },
+      {
+        title: "Problem Statement 3",
+        brief: "Art Generation: Create an AI system capable of generating original artworks or assisting artists in the creative process, leveraging techniques such as generative adversarial networks (GANs)."
+      }
+    ]
   };
 
   // Function to toggle dropdown visibility
@@ -322,7 +391,7 @@
     const problemList = problemStatements[domainId];
     if (problemList && problemList.length > 0) {
       const heading = document.createElement("h3");
-      heading.textContent = `Domain ${domainId} Problem Statements`;
+      heading.textContent = `Domain : ${domainId}`;
       detailsContainer.appendChild(heading);
 
       const list = document.createElement("ul");
