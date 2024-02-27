@@ -351,7 +351,10 @@ input[type="checkbox"]:checked ~ div {
 
 .rightbox {
   padding: 0em 34rem 0em 0em;
-  height: 100%;
+  height: 110%;
+}
+.rightbox sup{
+  color: white;
 }
 
 @media (max-width:601px){
@@ -374,6 +377,8 @@ input[type="checkbox"]:checked ~ div {
   margin: auto;
   display: block;
   position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .rb-container ul.rb {
@@ -801,9 +806,9 @@ ul.rb li .timestamp {
               <div class="rightbox">
                 <div class="rb-container">
                   <ul class="rb">
-                    <li class="rb-item" ng-repeat="itembx" style="margin-left: 80px;">
-                      <div class="timestamp" style="font-family: Anta, sans-serif;">
-                        <b style="color: white; font-family: Anta, sans-serif">1st APRIL</b> 2024
+                    <li class="rb-item" ng-repeat="itembx" style="margin-left: 80px; ">
+                      <div class="timestamp" style="font-family: Anta, sans-serif;width: 250px;">
+                        <b style="color: white; font-family: Anta, sans-serif;">1<sup>st</sup> APRIL</b><br> 2024
                       </div><br>
                       <div class="item-title" style="font-family:Anta, sans-serif
                       ;">Registration Closing</div><br>
@@ -811,16 +816,16 @@ ul.rb li .timestamp {
             
                     </li>
                     <li class="rb-item" ng-repeat="itembx" style="margin-left: 80px;">
-                      <div class="timestamp" style="font-family: Anta, sans-serif;">
-                        <b style="color: white; font-family: Anta, sans-serif">8th APRIL</b> 2024
+                      <div class="timestamp" style="font-family: Anta, sans-serif;width: 250px;">
+                        <b style="color: white; font-family: Anta, sans-serif">8<sup>th</sup> APRIL</b><br> 2024
                       </div><br>
                       <div class="item-title" style="font-family: Anta, sans-serif">Notification of Acceptance</div><br>
             
                     </li>
             
                     <li class="rb-item" ng-repeat="itembx" style="margin-left: 80px;">
-                      <div class="timestamp" style="font-family: Anta, sans-serif;">
-                    <b style="color: white; font-family: Anta, sans-serif;">12 & 13th APRIL</b> 2024
+                      <div class="timestamp" style="font-family: Anta, sans-serif;width: 250px;">
+                    <b style="color: white; font-family: Anta, sans-serif;">12<sup>th</sup> & 13<sup>th</sup> APRIL</b><br> 2024
                       </div><br>
                       <div class="item-title" style="font-family: Anta, sans-serif">Event Date</div><br>
             
@@ -836,7 +841,7 @@ ul.rb li .timestamp {
     <!--================End Important Dates Area =================-->
 
     <!--================Event Time Area =================-->
-    <section class="event_time_area rainbow">
+    <section class="event_time_area rainbow" style="margin: 20px;">
        
         
             <div class="body-timer">
@@ -892,7 +897,7 @@ ul.rb li .timestamp {
 
     <!--================End Event Schedule Area =================-->
     <section class="home_map_area">
-        <div class="mapBox2 rainbow">
+        <div class="mapBox2" >
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.774334842895!2d77.27456241462947!3d11.496196491835592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9215d6d1b28f9%3A0xf48946a7dfcfeb1a!2sBannari%20Amman%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1598088870874!5m2!1sen!2sin" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
             </iframe>
         </div>
