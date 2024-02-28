@@ -95,13 +95,13 @@ body{
      animation-play-state: paused;
  }
  .image  .checkbox.scnd + label{
-   background-image: url('../images/cafe.jpg');
+   background-image: url('../images/acc_3.jpg');
  }
  .image .checkbox.thrd + label{
-   background-image: url('../images/cafe.jpg');
+   background-image: url('../images/acc_2.jpg');
  }
  .image  .checkbox.foth + label{
-   background-image: url('../images/cafe.jpg');
+   background-image: url('../images/acc_4.jpg');
  }
  
  .image .checkbox:checked + label{
@@ -150,7 +150,7 @@ body{
    border: 5px solid #bdc3c7;
    background-size: cover;
    background-position: center;
-   background-image: url('../images/cafe.jpg');
+   background-image: url('../images/cafe.jpg ');
    border-radius: 50%;
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
@@ -170,13 +170,13 @@ body{
    mix-blend-mode: difference;
  }
  .image ul li:nth-child(2) {
-   background-image: url('../images/cafe.jpg');
+   background-image: url('../images/acc_3.jpg');
  }
  .image ul li:nth-child(3) {
-   background-image: url('../images/cafe.jpg');
+   background-image: url('../images/acc_2.jpg');
  }
  .image ul li:nth-child(4) {
-   background-image: url('../images/cafe.jpg');
+   background-image: url('../images/acc_4.jpg');
  }
  
  
